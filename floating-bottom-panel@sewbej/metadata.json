@@ -1,0 +1,10 @@
+{
+    "name": "Floating bottom panel",
+    "version": "2.2",
+    "description": "Floating bottom panel.",
+    "cinnamon-version": [
+        "6.4"
+    ],
+    "uuid": "floating-bottom-panel@sewbej",
+    "author": "sewbej"
+}

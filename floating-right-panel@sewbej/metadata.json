@@ -1,0 +1,10 @@
+{
+    "name": "Floating right panel",
+    "version": "2.2",
+    "description": "Floating right panel.",
+    "cinnamon-version": [
+        "6.4"
+    ],
+    "uuid": "floating-right-panel@sewbej",
+    "author": "sewbej"
+}

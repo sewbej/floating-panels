@@ -1,0 +1,90 @@
+{
+    "section-general": {
+        "type": "section",
+        "description": "Appearance"
+    },
+    "panel-theme": {
+        "type": "combobox",
+        "default": "-semabe-steel",
+        "description": "Panel color theme",
+        "options": {
+            "Mint-Y": "-mint-y",
+            "Mint-Y-Dark": "-mint-y-dark",
+            "Semabe azure": "-semabe-azure",
+            "Semabe cinnamon": "-semabe-cinnamon",
+            "Semabe crimson": "-semabe-crimson",
+            "Semabe falcon": "-semabe-falcon",
+            "Semabe steel": "-semabe-steel",
+            "Semabe mint": "-semabe-mint",
+            "Semabe nordic": "-semabe-nordic",
+            "Semabe violet": "-semabe-violet"
+        }
+    },
+    "transparency-level": {
+        "type": "combobox",
+        "default": "-translucent",
+        "description": "Panel transparency level",
+        "options": {
+            "transparent": "-transparent",
+            "glassy": "-glassy",
+            "translucent": "-translucent",
+            "opaque": "-opaque"
+        }
+    },
+    "rounded-corners": {
+        "type": "combobox",
+        "default": "-slightly",
+        "description": "Corner rounding",
+        "options": {
+            "no rounding": "-none",
+            "slightly rounded": "-slightly",
+            "strongly rounded": "-strongly",
+            "fully rounded": "-fully"
+        }
+    },
+    "panel-style": {
+        "type": "combobox",
+        "default": "panel-normal",
+        "description": "Panel style",
+        "options": {
+            "normal": "panel-normal",
+            "dock": "panel-dock",
+            "two-piece": "panel-two-piece",
+            "three-piece": "panel-three-piece"
+        }
+    },
+
+    "section-filters": {
+        "type": "section",
+        "description": "Behavior"
+    },
+
+    "filters-description": {
+        "type": "label",
+        "description": "When enabled, system panel height settings are locked. Turn off to change the panel height in Cinnamon settings."
+    },
+
+    "window-maximized": {
+      "type": "switch",
+      "default": false,
+      "description": "Disable floating panel behavior when windows are maximized.",
+      "tooltip": ""
+    },
+
+    "panel-height": {
+      "type": "scale",
+      "description": "Panel height when windows are maximized.",
+      "dependency" : "window-maximized",
+      "show-value" : false,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 100
+    },
+
+    "first-launch": {
+        "type": "generic",
+        "default": false
+    }
+}
+
