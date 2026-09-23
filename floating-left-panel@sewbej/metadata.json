@@ -1,10 +1,9 @@
 {
     "name": "Floating left panel",
-    "version": "2.2",
-    "description": "Floating left panel.",
-    "cinnamon-version": [
-        "6.4"
-    ],
+    "version": "2.4",
+    "description": "Floating left panel",
+    "url": "www.cinnamon-look.org/p/2225956",
+    "cinnamon-version": ["6.4", "6.6"],
     "uuid": "floating-left-panel@sewbej",
     "author": "sewbej"
 }
