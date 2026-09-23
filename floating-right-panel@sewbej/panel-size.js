@@ -8,7 +8,7 @@ const SignalManager = imports.misc.signalManager;
    CONFIGURATION (right PANEL)
 ------------------------------------------------------- */
 
-const TARGET_POS        = Panel.PanelLoc.right;  // this module only affects right panels
+const TARGET_POS         = Panel.PanelLoc.right;  // this module only affects right panels
 const DEFAULT_PANEL_SIZE = 48;                    // fallback height
 const MIN_SIZE           = 12;                    // minimal panel height
 
@@ -17,6 +17,7 @@ let panelHeightPercent = 7;
 
 // GSettings and runtime state
 let settings          = null;
+let extSettings       = null;  // Ustawienia Twojego rozszerzenia
 let originalHeightsMap = {};   // panelId -> original "100%" height (right panels only)
 let panelMonitorMap    = {};   // panelId -> monitor index
 
@@ -31,8 +32,13 @@ let _signals = null;
    PUBLIC API
 ------------------------------------------------------- */
 
-function init() {
+function init(settingsObject) {
     settings = new Gio.Settings({ schema: "org.cinnamon" });
+    
+    // Jeśli przekazano instancję ustawień z extension.js, przypisujemy ją
+    if (settingsObject) {
+        extSettings = settingsObject;
+    }
 }
 
 function setPanelHeight(value) {
@@ -155,7 +161,6 @@ function onWindowCreated(display, win) {
 
 function onSizeChange(wm, actor, change) {
     if (!actor || !actor.metaWindow) {
-        // no window: just recompute based on current workspace
         rebuildMaximizedState();
         updatePanelHeights();
         return;
@@ -163,7 +168,6 @@ function onSizeChange(wm, actor, change) {
 
     const win = actor.metaWindow;
 
-    // TILE consistency fix: update twice, including one BEFORE_REDRAW
     if (change === Meta.SizeChange.TILE) {
         updateWindowTracking(win);
         updatePanelHeights();
@@ -171,12 +175,11 @@ function onSizeChange(wm, actor, change) {
         Meta.later_add(Meta.LaterType.BEFORE_REDRAW, () => {
             updateWindowTracking(win);
             updatePanelHeights();
-            return false; // run once
+            return false;
         });
         return;
     }
 
-    // MAXIMIZE / UNMAXIMIZE: update synchronously
     if (change === Meta.SizeChange.MAXIMIZE ||
         change === Meta.SizeChange.UNMAXIMIZE) {
         updateWindowTracking(win);
@@ -184,18 +187,15 @@ function onSizeChange(wm, actor, change) {
         return;
     }
 
-    // other changes: just update
     updateWindowTracking(win);
     updatePanelHeights();
 }
 
 function hookWindow(win) {
     try {
-        // mark window as already hooked for this extension
         if (!win || win._fbpTrackedright) return;
         win._fbpTrackedright = true;
 
-        // react to maximize / tile / minimize / workspace changes / unmanaged
         _signals.connect(win, "notify::maximized-horizontally", () => {
             updateWindowTracking(win);
             updatePanelHeights();
@@ -226,7 +226,6 @@ function hookWindow(win) {
             updatePanelHeights();
         });
 
-        // initial tracking
         updateWindowTracking(win);
 
     } catch (e) {
@@ -245,7 +244,6 @@ function isWindowMaximizedOrTiled(win) {
             win.get_window_type() === Meta.WindowType.DESKTOP)
             return false;
 
-        // maximized?
         let max = false;
         if (typeof win.get_maximized === "function") {
             max = win.get_maximized() !== 0;
@@ -253,7 +251,6 @@ function isWindowMaximizedOrTiled(win) {
             max = !!(win.maximized_horizontally || win.maximized_vertically);
         }
 
-        // tiled?
         let tiled = false;
         if (typeof win.get_tiled_edges === "function") {
             try {
@@ -263,7 +260,6 @@ function isWindowMaximizedOrTiled(win) {
             }
         } else if (typeof win.tile_type !== "undefined" &&
                    win.tile_type !== Meta.TileType.NONE) {
-            // fallback if get_tiled_edges() isn't available
             tiled = true;
         }
 
@@ -279,11 +275,8 @@ function getWindowMonitor(win) {
             const mon = win.get_monitor();
             if (mon >= 0) return mon;
         }
-    } catch (e) {
-        // ignore
-    }
+    } catch (e) {}
 
-    // fallback: compute monitor from frame rect center
     let frame = null;
     try {
         frame = win.get_frame_rect ? win.get_frame_rect() : null;
@@ -345,11 +338,9 @@ function updateWindowTracking(win) {
         if (prev.monitor === nowMon && prev.isMax === nowIsMax)
             return;
 
-        // remove previous influence
         if (prev.isMax && prev.monitor >= 0)
             decMonitor(prev.monitor);
 
-        // add new influence
         if (nowIsMax && nowMon >= 0)
             incMonitor(nowMon);
 
@@ -445,7 +436,6 @@ function assignPanelsToMonitors() {
                 height: box.y2 - box.y1
             };
 
-            // find monitor for this panel
             const cx = rect.x + rect.width / 2;
             const cy = rect.y + rect.height / 2;
 
@@ -463,13 +453,13 @@ function assignPanelsToMonitors() {
 
             panelMonitorMap[id] = mon;
         } catch (e) {
-            // ignore per-panel errors
+            // ignore
         }
     });
 }
 
 function readOriginalHeights() {
-    originalHeightsMap = {};
+    if (Object.keys(originalHeightsMap).length > 0) return;
 
     let arr = [];
     try {
@@ -500,7 +490,6 @@ function readOriginalHeights() {
 
             originalHeightsMap[id] = orig;
         } catch (e) {
-            // ignore
         }
     });
 }
@@ -525,7 +514,6 @@ function restoreOriginalHeights() {
         order.push(id);
     });
 
-    // ensure all panels are present
     const panels = getAllPanels();
     panels.forEach(p => {
         if (!p) return;
@@ -536,7 +524,6 @@ function restoreOriginalHeights() {
         }
     });
 
-    // restore only right panels we manage
     for (let id in originalHeightsMap) {
         if (!originalHeightsMap.hasOwnProperty(id))
             continue;
@@ -552,6 +539,28 @@ function restoreOriginalHeights() {
 /* -------------------------------------------------------
    PANEL HEIGHT CALCULATION
 ------------------------------------------------------- */
+
+function getGapValue() {
+    let gap = 8;
+
+    if (extSettings) {
+        try {
+            if (typeof extSettings.get_int === "function") {
+                gap = extSettings.get_int("gap-size");
+            } else {
+                let v = extSettings.getValue("gap-size");
+                if (v) gap = typeof v.get_int32 === "function" ? v.get_int32() : parseInt(v, 10);
+            }
+            if (!isNaN(gap)) return gap;
+        } catch (e) {}
+    }
+
+    if (typeof global.gapSize === "number" && !isNaN(global.gapSize)) {
+        return global.gapSize;
+    }
+
+    return 8;
+}
 
 function updatePanelHeights() {
     if (!originalHeightsMap || !Object.keys(originalHeightsMap).length)
@@ -590,6 +599,8 @@ function updatePanelHeights() {
         }
     });
 
+    const gap = getGapValue();
+
     // adjust only right panels we manage
     for (let id in originalHeightsMap) {
         if (!originalHeightsMap.hasOwnProperty(id)) continue;
@@ -601,10 +612,10 @@ function updatePanelHeights() {
             const orig = originalHeightsMap[id];
 
             // 0% = ~20px (after correction), 100% = orig
-            const minH = 27;
+            const minH = 21 + gap;
             const maxH = orig;
 
-            const t = minH + (maxH - minH) * (panelHeightPercent / 100) - 7;
+            const t = minH + (maxH - minH) * (panelHeightPercent / 100) - (gap + 1);
             target   = Math.max(MIN_SIZE, Math.round(t));
         } else {
             target = originalHeightsMap[id];
@@ -618,4 +629,3 @@ function updatePanelHeights() {
     const finalArr = order.map(id => `${id}:${map[id]}`);
     settings.set_strv("panels-height", finalArr);
 }
-
