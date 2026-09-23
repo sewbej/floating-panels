@@ -1,90 +1,161 @@
 {
+  "layout": {
+    "type": "layout",
+    "pages": [
+      "page1",
+      "page2"
+    ],
+    "page1": {
+      "type": "page",
+      "title": "Settings",
+      "sections": [
+        "section-general",
+        "section-filters"
+      ]
+    },
+    "page2": {
+      "type": "page",
+      "title": "About",
+      "sections": [
+        "section-about"
+      ]
+    },
     "section-general": {
-        "type": "section",
-        "description": "Appearance"
+      "type": "section",
+      "title": "Appearance",
+      "keys": [
+        "panel-theme",
+        "transparency-level",
+        "rounded-corners",
+        "panel-style",
+        "gap-size"
+      ]
     },
-    "panel-theme": {
-        "type": "combobox",
-        "default": "-semabe-steel",
-        "description": "Panel color theme",
-        "options": {
-            "Mint-Y": "-mint-y",
-            "Mint-Y-Dark": "-mint-y-dark",
-            "Semabe azure": "-semabe-azure",
-            "Semabe cinnamon": "-semabe-cinnamon",
-            "Semabe crimson": "-semabe-crimson",
-            "Semabe falcon": "-semabe-falcon",
-            "Semabe steel": "-semabe-steel",
-            "Semabe mint": "-semabe-mint",
-            "Semabe nordic": "-semabe-nordic",
-            "Semabe violet": "-semabe-violet"
-        }
-    },
-    "transparency-level": {
-        "type": "combobox",
-        "default": "-translucent",
-        "description": "Panel transparency level",
-        "options": {
-            "transparent": "-transparent",
-            "glassy": "-glassy",
-            "translucent": "-translucent",
-            "opaque": "-opaque"
-        }
-    },
-    "rounded-corners": {
-        "type": "combobox",
-        "default": "-slightly",
-        "description": "Corner rounding",
-        "options": {
-            "no rounding": "-none",
-            "slightly rounded": "-slightly",
-            "strongly rounded": "-strongly",
-            "fully rounded": "-fully"
-        }
-    },
-    "panel-style": {
-        "type": "combobox",
-        "default": "panel-normal",
-        "description": "Panel style",
-        "options": {
-            "normal": "panel-normal",
-            "dock": "panel-dock",
-            "two-piece": "panel-two-piece",
-            "three-piece": "panel-three-piece"
-        }
-    },
-
     "section-filters": {
-        "type": "section",
-        "description": "Behavior"
+      "type": "section",
+      "title": "Behavior",
+      "keys": [
+        "window-maximized",
+        "panel-height",
+        "filters-description"
+      ]
     },
-
-    "filters-description": {
-        "type": "label",
-        "description": "When enabled, system panel height settings are locked. Turn off to change the panel height in Cinnamon settings."
-    },
-
-    "window-maximized": {
-      "type": "switch",
-      "default": false,
-      "description": "Disable floating panel behavior when windows are maximized.",
-      "tooltip": ""
-    },
-
-    "panel-height": {
-      "type": "scale",
-      "description": "Panel height when windows are maximized.",
-      "dependency" : "window-maximized",
-      "show-value" : false,
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "default": 100
-    },
-
-    "first-launch": {
-        "type": "generic",
-        "default": false
+    "section-about": {
+      "type": "section",
+      "title": "Information",
+      "keys": [
+        "about-label",
+        "website_btn",
+        "issue_btn",
+        "donate_btn"
+      ]
     }
-}
+  },
 
+  "panel-theme": {
+    "type": "combobox",
+    "default": "-semabe-steel",
+    "description": "Panel color theme",
+    "options": {
+      "Mint-Y": "-mint-y",
+      "Mint-Y-Dark": "-mint-y-dark",
+      "Semabe azure": "-semabe-azure",
+      "Semabe cinnamon": "-semabe-cinnamon",
+      "Semabe crimson": "-semabe-crimson",
+      "Semabe falcon": "-semabe-falcon",
+      "Semabe steel": "-semabe-steel",
+      "Semabe mint": "-semabe-mint",
+      "Semabe nordic": "-semabe-nordic",
+      "Semabe violet": "-semabe-violet"
+    }
+  },
+  "transparency-level": {
+    "type": "combobox",
+    "default": "-translucent",
+    "description": "Panel transparency level",
+    "options": {
+      "transparent": "-transparent",
+      "glassy": "-glassy",
+      "translucent": "-translucent",
+      "opaque": "-opaque"
+    }
+  },
+  "rounded-corners": {
+    "type": "combobox",
+    "default": "-slightly",
+    "description": "Corner rounding",
+    "options": {
+      "no rounding": "-none",
+      "slightly rounded": "-slightly",
+      "strongly rounded": "-strongly",
+      "fully rounded": "-fully"
+    }
+  },
+  "panel-style": {
+    "type": "combobox",
+    "default": "panel-normal",
+    "description": "Panel style",
+    "options": {
+      "normal": "panel-normal",
+      "dock": "panel-dock",
+      "two-piece": "panel-two-piece",
+      "three-piece": "panel-three-piece"
+    }
+  },
+  "gap-size": {
+    "type": "scale",
+    "description": "Gap size",
+    "show-value": true,
+    "min": 4,
+    "max": 16,
+    "step": 1,
+    "default": 8
+  },
+
+  "window-maximized": {
+    "type": "switch",
+    "default": false,
+    "description": "Disable floating panel behavior when windows are maximized.",
+    "tooltip": ""
+  },
+  "panel-height": {
+    "type": "scale",
+    "description": "Panel height when windows are maximized.",
+    "dependency": "window-maximized",
+    "show-value": false,
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "default": 100
+  },
+  "filters-description": {
+    "type": "label",
+    "dependency": "window-maximized",
+    "description": "When enabled, system panel height settings are locked. Turn off to change the panel height in Cinnamon settings."
+  },
+
+  "about-label": {
+    "type": "label",
+    "description": "Floating top panel\n\nversion: 2.4"
+  },
+  "website_btn": {
+    "type": "button",
+    "description": "Website",
+    "callback": "btn_website_pressed"
+  },
+    "issue_btn": {
+        "type": "button",
+        "description": "Report an issue",
+        "callback": "btn_issue_pressed"
+    },
+    "donate_btn": {
+        "type": "button",
+        "description": "Donate",
+        "callback": "btn_donate_pressed"
+    },
+
+  "first-launch": {
+    "type": "generic",
+    "default": false
+  }
+}
