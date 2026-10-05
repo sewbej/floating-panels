@@ -10,6 +10,9 @@
       "title": "Settings",
       "sections": [
         "section-general",
+        "section-appearance",
+        "section-radius",
+        "section-gap-size",
         "section-filters"
       ]
     },
@@ -25,9 +28,33 @@
       "title": "Appearance",
       "keys": [
         "panel-theme",
-        "transparency-level",
-        "rounded-corners",
-        "panel-style",
+        "background-gradient-start",
+        "background-gradient-end",
+        "border-color",
+        "panel-theme-predefined",
+        "opacity-level"
+      ]
+    },
+    "section-appearance": {
+      "type": "section",
+      "title": "",
+      "keys": [
+        "border-thickness",
+        "panel-shadow",
+        "panel-style"
+      ]
+    },
+    "section-radius": {
+      "type": "section",
+      "title": "",
+      "keys": [
+        "border-radius"
+      ]
+    },
+    "section-gap-size": {
+      "type": "section",
+      "title": "",
+      "keys": [
         "gap-size"
       ]
     },
@@ -36,8 +63,8 @@
       "title": "Behavior",
       "keys": [
         "window-maximized",
-        "panel-height",
-        "filters-description"
+        "filters-description",
+        "panel-height"
       ]
     },
     "section-about": {
@@ -51,55 +78,93 @@
       ]
     }
   },
-
   "panel-theme": {
     "type": "combobox",
+    "default": "-custom",
+    "description": "Panel color scheme",
+    "options": {
+      "Custom": "-custom",
+      "Predefined": "predefined"
+    }
+  },
+  "panel-theme-predefined": {
+    "type": "combobox",
     "default": "-semabe-steel",
-    "description": "Panel color theme",
+    "description": "Color scheme",
+    "dependency": "panel-theme=predefined",
     "options": {
       "Mint-Y": "-mint-y",
       "Mint-Y-Dark": "-mint-y-dark",
-      "Semabe azure": "-semabe-azure",
-      "Semabe cinnamon": "-semabe-cinnamon",
-      "Semabe crimson": "-semabe-crimson",
-      "Semabe falcon": "-semabe-falcon",
-      "Semabe steel": "-semabe-steel",
-      "Semabe mint": "-semabe-mint",
-      "Semabe nordic": "-semabe-nordic",
-      "Semabe violet": "-semabe-violet"
+      "Semabe Azure": "-semabe-azure",
+      "Semabe Cinnamon": "-semabe-cinnamon",
+      "Semabe Crimson": "-semabe-crimson",
+      "Semabe Falcon": "-semabe-falcon",
+      "Semabe Grey": "-semabe-grey",
+      "Semabe Mint": "-semabe-mint",
+      "Semabe Nordic": "-semabe-nordic",
+      "Semabe Steel": "-semabe-steel",
+      "Semabe Violet": "-semabe-violet"
     }
   },
-  "transparency-level": {
-    "type": "combobox",
-    "default": "-translucent",
-    "description": "Panel transparency level",
-    "options": {
-      "transparent": "-transparent",
-      "glassy": "-glassy",
-      "translucent": "-translucent",
-      "opaque": "-opaque"
-    }
+  "background-gradient-start": {
+    "type": "colorchooser",
+    "default": "rgba(255,255,255,1.0)",
+    "dependency": "panel-theme=-custom",
+    "description": "Gradient start color"
   },
-  "rounded-corners": {
-    "type": "combobox",
-    "default": "-slightly",
-    "description": "Corner rounding",
-    "options": {
-      "no rounding": "-none",
-      "slightly rounded": "-slightly",
-      "strongly rounded": "-strongly",
-      "fully rounded": "-fully"
-    }
+  "background-gradient-end": {
+    "type": "colorchooser",
+    "default": "rgba(154,153,150,1.0)",
+    "dependency": "panel-theme=-custom",
+    "description": "Gradient end color"
+  },
+  "border-color": {
+    "type": "colorchooser",
+    "default": "rgba(0,0,0,1.0)",
+    "dependency": "panel-theme=-custom",
+    "description": "Border color"
+  },
+  "opacity-level": {
+    "type": "scale",
+    "description": "Opacity",
+    "dependency": "panel-theme=predefined",
+    "show-value": false,
+    "min": 0,
+    "max": 1,
+    "step": 0.1,
+    "default": 1
+  },
+  "border-radius": {
+    "type": "scale",
+    "description": "Corner radius",
+    "show-value": true,
+    "min": 0,
+    "max": 36,
+    "step": 1,
+    "default": 12
+  },
+  "panel-shadow": {
+    "type": "colorchooser",
+    "default": "rgba(0,0,0,0.0)",
+    "description": "Panel shadow color"
+  },
+  "border-thickness": {
+    "type": "spinbutton",
+    "description": "Border width",
+    "min": 0,
+    "max": 6,
+    "step": 1,
+    "default": 1
   },
   "panel-style": {
     "type": "combobox",
     "default": "panel-normal",
     "description": "Panel style",
     "options": {
-      "normal": "panel-normal",
-      "dock": "panel-dock",
-      "two-piece": "panel-two-piece",
-      "three-piece": "panel-three-piece"
+      "Normal": "panel-normal",
+      "Dock": "panel-dock",
+      "Two-piece": "panel-two-piece",
+      "Three-piece": "panel-three-piece"
     }
   },
   "gap-size": {
@@ -107,20 +172,19 @@
     "description": "Gap size",
     "show-value": true,
     "min": 4,
-    "max": 16,
+    "max": 20,
     "step": 1,
-    "default": 8
+    "default": 10
   },
-
   "window-maximized": {
     "type": "switch",
     "default": false,
-    "description": "Disable floating panel behavior when windows are maximized.",
+    "description": "Disable floating panel when a window is maximized",
     "tooltip": ""
   },
   "panel-height": {
     "type": "scale",
-    "description": "Panel height when windows are maximized.",
+    "description": "                                        Panel height when a window is maximized\nsmall                                                                                                                        same as floating",
     "dependency": "window-maximized",
     "show-value": false,
     "min": 0,
@@ -131,31 +195,25 @@
   "filters-description": {
     "type": "label",
     "dependency": "window-maximized",
-    "description": "When enabled, system panel height settings are locked. Turn off to change the panel height in Cinnamon settings."
+    "description": "Cinnamon's panel height setting is locked while this option is on. Turn it off to change the panel height."
   },
-
   "about-label": {
     "type": "label",
-    "description": "Floating bottom panel\n\nversion: 2.4"
+    "description": "Floating bottom panel\n\nVersion 3.0"
   },
   "website_btn": {
     "type": "button",
-    "description": "Website",
+    "description": "Vist website",
     "callback": "btn_website_pressed"
   },
-    "issue_btn": {
-        "type": "button",
-        "description": "Report an issue",
-        "callback": "btn_issue_pressed"
-    },
-    "donate_btn": {
-        "type": "button",
-        "description": "Donate",
-        "callback": "btn_donate_pressed"
-    },
-
-  "first-launch": {
-    "type": "generic",
-    "default": false
+  "issue_btn": {
+    "type": "button",
+    "description": "Report an issue",
+    "callback": "btn_issue_pressed"
+  },
+  "donate_btn": {
+    "type": "button",
+    "description": "Donate",
+    "callback": "btn_donate_pressed"
   }
 }
