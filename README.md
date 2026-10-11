@@ -2,7 +2,7 @@ Description:
 An extension that modifies your panel. Tested on Linux Mint 22.3
 
 Known issues:
-The applets “Grouped window list” and “Workspace switcher” have a issue with this extension. Install the modified versions (included in the archive).
+The applets “Grouped window list” and “Workspace switcher” have a issue with this extension. Install the modified versions.
 
 INSTALATION:
 Copy to this location:
