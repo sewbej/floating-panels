@@ -1,0 +1,8 @@
+{
+    "name": "Grouped window list mod",
+    "role": "panellauncher, windowattentionhandler",
+    "uuid": "grouped-window-list[mod]@cinnamon.org",
+    "description": "Main Cinnamon window list with app grouping",
+    "icon": "cs-windows",
+    "max-instances": -1
+}

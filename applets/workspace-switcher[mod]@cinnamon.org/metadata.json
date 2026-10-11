@@ -1,0 +1,7 @@
+{
+ "uuid": "workspace-switcher[mod]@cinnamon.org",
+ "name": "Workspace switcher[mod]",
+ "description": "Select the workspace from the panel",
+ "icon": "cs-workspaces",
+ "max-instances": -1
+}
