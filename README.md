@@ -1,10 +1,10 @@
 # Floating Panels
-Description:
+DESCRIPTION:
 
 An extension that modifies your panel. Tested on Linux Mint 22.3
 #
 
-Known issues:
+KNOWN ISSUES:
 
 The applets “Grouped window list” and “Workspace switcher” have a issue with this extension. Install the modified versions.
 #
