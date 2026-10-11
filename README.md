@@ -9,7 +9,7 @@ KNOWN ISSUES:
 The applets “Grouped window list” and “Workspace switcher” have a issue with this extension. Install the modified versions.
 #
 
-INSTALATION:
+INSTALLATION:
 
 Copy to this location:
 ~/.local/share/cinnamon
