@@ -17,5 +17,7 @@ Copy to this location:
 ```bash
 sudo sed -i "s/maxi=../maxi=80/g" "/usr/share/cinnamon/cinnamon-settings/modules/cs_panel.py"
 ```
+#
+#### SCREENSHOTS:
 ![FP1](screenshot1.webp)
 ![FP2](screenshot2.webp)
