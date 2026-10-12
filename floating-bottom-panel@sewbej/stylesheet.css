@@ -11,20 +11,20 @@
     margin: 6px;
 }
 
-.panel-bottom.panel-normal-mint-y-fully #panelLeft,
-.panel-bottom.panel-normal-mint-y-fully #panelCenter,
-.panel-bottom.panel-normal-mint-y-fully #panelRight,
-.panel-bottom.panel-dock-mint-y-fully #panelLeft,
-.panel-bottom.panel-dock-mint-y-fully #panelCenter,
-.panel-bottom.panel-dock-mint-y-fully #panelRight,
-.panel-bottom.panel-two-piece-mint-y-fully #panelLeft,
-.panel-bottom.panel-two-piece-mint-y-fully #panelCenter,
-.panel-bottom.panel-two-piece-mint-y-fully #panelRight,
-.panel-bottom.panel-three-piece-mint-y-fully #panelLeft,
-.panel-bottom.panel-three-piece-mint-y-fully #panelCenter,
-.panel-bottom.panel-three-piece-mint-y-fully #panelRight {
+.panel-bottom.panel-normal-mint-y-sewbej #panelLeft,
+.panel-bottom.panel-normal-mint-y-sewbej #panelCenter,
+.panel-bottom.panel-normal-mint-y-sewbej #panelRight,
+.panel-bottom.panel-dock-mint-y-sewbej #panelLeft,
+.panel-bottom.panel-dock-mint-y-sewbej #panelCenter,
+.panel-bottom.panel-dock-mint-y-sewbej #panelRight,
+.panel-bottom.panel-two-piece-mint-y-sewbej #panelLeft,
+.panel-bottom.panel-two-piece-mint-y-sewbej #panelCenter,
+.panel-bottom.panel-two-piece-mint-y-sewbej #panelRight,
+.panel-bottom.panel-three-piece-mint-y-sewbej #panelLeft,
+.panel-bottom.panel-three-piece-mint-y-sewbej #panelCenter,
+.panel-bottom.panel-three-piece-mint-y-sewbej #panelRight {
     box-shadow: 0px 0px 7px 5px
-        rgba(0,0,0,0); /*shadow-color*/
+        rgba(0,0,0,0.0); /*shadow-color*/
     border-color:rgba(181,181,181,1);
     background-gradient-direction: vertical;
     background-gradient-start: rgba(243,243,244,
@@ -33,43 +33,43 @@
         1); /*opacity*/
 }
 
-.panel-bottom.panel-normal-custom-fully #panelLeft,
-.panel-bottom.panel-normal-custom-fully #panelCenter,
-.panel-bottom.panel-normal-custom-fully #panelRight,
-.panel-bottom.panel-dock-custom-fully #panelLeft,
-.panel-bottom.panel-dock-custom-fully #panelCenter,
-.panel-bottom.panel-dock-custom-fully #panelRight,
-.panel-bottom.panel-two-piece-custom-fully #panelLeft,
-.panel-bottom.panel-two-piece-custom-fully #panelCenter,
-.panel-bottom.panel-two-piece-custom-fully #panelRight,
-.panel-bottom.panel-three-piece-custom-fully #panelLeft,
-.panel-bottom.panel-three-piece-custom-fully #panelCenter,
-.panel-bottom.panel-three-piece-custom-fully #panelRight {
+.panel-bottom.panel-normal-custom-sewbej #panelLeft,
+.panel-bottom.panel-normal-custom-sewbej #panelCenter,
+.panel-bottom.panel-normal-custom-sewbej #panelRight,
+.panel-bottom.panel-dock-custom-sewbej #panelLeft,
+.panel-bottom.panel-dock-custom-sewbej #panelCenter,
+.panel-bottom.panel-dock-custom-sewbej #panelRight,
+.panel-bottom.panel-two-piece-custom-sewbej #panelLeft,
+.panel-bottom.panel-two-piece-custom-sewbej #panelCenter,
+.panel-bottom.panel-two-piece-custom-sewbej #panelRight,
+.panel-bottom.panel-three-piece-custom-sewbej #panelLeft,
+.panel-bottom.panel-three-piece-custom-sewbej #panelCenter,
+.panel-bottom.panel-three-piece-custom-sewbej #panelRight {
     box-shadow: 0px 0px 7px 5px
-        rgba(0,0,0,0); /*shadow-color*/
+        rgba(0,0,0,0.0); /*shadow-color*/
     border-color:
-        rgb(0,0,0); /*border-color-custom*/
+        rgba(0,0,0,1.0); /*border-color-custom*/
     background-gradient-direction: vertical;
     background-gradient-start:
-        rgb(255,255,255); /*gradient-start-custom*/
+        rgba(255,255,255,1.0); /*gradient-start-custom*/
     background-gradient-end:
-        rgb(154,153,150); /*gradient-end-custom*/
+        rgba(154,153,150,1.0); /*gradient-end-custom*/
 }
 
-.panel-bottom.panel-normal-mint-y-dark-fully #panelLeft,
-.panel-bottom.panel-normal-mint-y-dark-fully #panelCenter,
-.panel-bottom.panel-normal-mint-y-dark-fully #panelRight,
-.panel-bottom.panel-dock-mint-y-dark-fully #panelLeft,
-.panel-bottom.panel-dock-mint-y-dark-fully #panelCenter,
-.panel-bottom.panel-dock-mint-y-dark-fully #panelRight,
-.panel-bottom.panel-two-piece-mint-y-dark-fully #panelLeft,
-.panel-bottom.panel-two-piece-mint-y-dark-fully #panelCenter,
-.panel-bottom.panel-two-piece-mint-y-dark-fully #panelRight,
-.panel-bottom.panel-three-piece-mint-y-dark-fully #panelLeft,
-.panel-bottom.panel-three-piece-mint-y-dark-fully #panelCenter,
-.panel-bottom.panel-three-piece-mint-y-dark-fully #panelRight {
+.panel-bottom.panel-normal-mint-y-dark-sewbej #panelLeft,
+.panel-bottom.panel-normal-mint-y-dark-sewbej #panelCenter,
+.panel-bottom.panel-normal-mint-y-dark-sewbej #panelRight,
+.panel-bottom.panel-dock-mint-y-dark-sewbej #panelLeft,
+.panel-bottom.panel-dock-mint-y-dark-sewbej #panelCenter,
+.panel-bottom.panel-dock-mint-y-dark-sewbej #panelRight,
+.panel-bottom.panel-two-piece-mint-y-dark-sewbej #panelLeft,
+.panel-bottom.panel-two-piece-mint-y-dark-sewbej #panelCenter,
+.panel-bottom.panel-two-piece-mint-y-dark-sewbej #panelRight,
+.panel-bottom.panel-three-piece-mint-y-dark-sewbej #panelLeft,
+.panel-bottom.panel-three-piece-mint-y-dark-sewbej #panelCenter,
+.panel-bottom.panel-three-piece-mint-y-dark-sewbej #panelRight {
     box-shadow: 0px 0px 7px 5px
-        rgba(0,0,0,0); /*shadow-color*/
+        rgba(0,0,0,0.0); /*shadow-color*/
     border-color: rgba(22,22,22,1);
     background-gradient-direction: vertical;
     background-gradient-start: rgba(28,28,32,
@@ -78,20 +78,20 @@
         1); /*opacity*/
 }
 
-.panel-bottom.panel-normal-semabe-azure-fully #panelLeft,
-.panel-bottom.panel-normal-semabe-azure-fully #panelCenter,
-.panel-bottom.panel-normal-semabe-azure-fully #panelRight,
-.panel-bottom.panel-dock-semabe-azure-fully #panelLeft,
-.panel-bottom.panel-dock-semabe-azure-fully #panelCenter,
-.panel-bottom.panel-dock-semabe-azure-fully #panelRight,
-.panel-bottom.panel-two-piece-semabe-azure-fully #panelLeft,
-.panel-bottom.panel-two-piece-semabe-azure-fully #panelCenter,
-.panel-bottom.panel-two-piece-semabe-azure-fully #panelRight,
-.panel-bottom.panel-three-piece-semabe-azure-fully #panelLeft,
-.panel-bottom.panel-three-piece-semabe-azure-fully #panelCenter,
-.panel-bottom.panel-three-piece-semabe-azure-fully #panelRight {
+.panel-bottom.panel-normal-semabe-azure-sewbej #panelLeft,
+.panel-bottom.panel-normal-semabe-azure-sewbej #panelCenter,
+.panel-bottom.panel-normal-semabe-azure-sewbej #panelRight,
+.panel-bottom.panel-dock-semabe-azure-sewbej #panelLeft,
+.panel-bottom.panel-dock-semabe-azure-sewbej #panelCenter,
+.panel-bottom.panel-dock-semabe-azure-sewbej #panelRight,
+.panel-bottom.panel-two-piece-semabe-azure-sewbej #panelLeft,
+.panel-bottom.panel-two-piece-semabe-azure-sewbej #panelCenter,
+.panel-bottom.panel-two-piece-semabe-azure-sewbej #panelRight,
+.panel-bottom.panel-three-piece-semabe-azure-sewbej #panelLeft,
+.panel-bottom.panel-three-piece-semabe-azure-sewbej #panelCenter,
+.panel-bottom.panel-three-piece-semabe-azure-sewbej #panelRight {
     box-shadow: 0px 0px 7px 5px
-        rgba(0,0,0,0); /*shadow-color*/
+        rgba(0,0,0,0.0); /*shadow-color*/
     border-color: rgba(0,5,23,1.0);
     background-gradient-direction: vertical;
     background-gradient-start: rgba(53,122,191,
@@ -100,20 +100,20 @@
         1); /*opacity*/
 }
 
-.panel-bottom.panel-normal-semabe-cinnamon-fully #panelLeft,
-.panel-bottom.panel-normal-semabe-cinnamon-fully #panelCenter,
-.panel-bottom.panel-normal-semabe-cinnamon-fully #panelRight,
-.panel-bottom.panel-dock-semabe-cinnamon-fully #panelLeft,
-.panel-bottom.panel-dock-semabe-cinnamon-fully #panelCenter,
-.panel-bottom.panel-dock-semabe-cinnamon-fully #panelRight,
-.panel-bottom.panel-two-piece-semabe-cinnamon-fully #panelLeft,
-.panel-bottom.panel-two-piece-semabe-cinnamon-fully #panelCenter,
-.panel-bottom.panel-two-piece-semabe-cinnamon-fully #panelRight,
-.panel-bottom.panel-three-piece-semabe-cinnamon-fully #panelLeft,
-.panel-bottom.panel-three-piece-semabe-cinnamon-fully #panelCenter,
-.panel-bottom.panel-three-piece-semabe-cinnamon-fully #panelRight  {
+.panel-bottom.panel-normal-semabe-cinnamon-sewbej #panelLeft,
+.panel-bottom.panel-normal-semabe-cinnamon-sewbej #panelCenter,
+.panel-bottom.panel-normal-semabe-cinnamon-sewbej #panelRight,
+.panel-bottom.panel-dock-semabe-cinnamon-sewbej #panelLeft,
+.panel-bottom.panel-dock-semabe-cinnamon-sewbej #panelCenter,
+.panel-bottom.panel-dock-semabe-cinnamon-sewbej #panelRight,
+.panel-bottom.panel-two-piece-semabe-cinnamon-sewbej #panelLeft,
+.panel-bottom.panel-two-piece-semabe-cinnamon-sewbej #panelCenter,
+.panel-bottom.panel-two-piece-semabe-cinnamon-sewbej #panelRight,
+.panel-bottom.panel-three-piece-semabe-cinnamon-sewbej #panelLeft,
+.panel-bottom.panel-three-piece-semabe-cinnamon-sewbej #panelCenter,
+.panel-bottom.panel-three-piece-semabe-cinnamon-sewbej #panelRight  {
     box-shadow: 0px 0px 7px 5px
-        rgba(0,0,0,0); /*shadow-color*/
+        rgba(0,0,0,0.0); /*shadow-color*/
     border-color: rgba(15,5,0,1.0);
     background-gradient-direction: vertical;
     background-gradient-start: rgba(191,76,19,
@@ -122,20 +122,20 @@
         1); /*opacity*/
 }
 
-.panel-bottom.panel-normal-semabe-crimson-fully #panelLeft,
-.panel-bottom.panel-normal-semabe-crimson-fully #panelCenter,
-.panel-bottom.panel-normal-semabe-crimson-fully #panelRight,
-.panel-bottom.panel-dock-semabe-crimson-fully #panelLeft,
-.panel-bottom.panel-dock-semabe-crimson-fully #panelCenter,
-.panel-bottom.panel-dock-semabe-crimson-fully #panelRight,
-.panel-bottom.panel-two-piece-semabe-crimson-fully #panelLeft,
-.panel-bottom.panel-two-piece-semabe-crimson-fully #panelCenter,
-.panel-bottom.panel-two-piece-semabe-crimson-fully #panelRight,
-.panel-bottom.panel-three-piece-semabe-crimson-fully #panelLeft,
-.panel-bottom.panel-three-piece-semabe-crimson-fully #panelCenter,
-.panel-bottom.panel-three-piece-semabe-crimson-fully #panelRight {
+.panel-bottom.panel-normal-semabe-crimson-sewbej #panelLeft,
+.panel-bottom.panel-normal-semabe-crimson-sewbej #panelCenter,
+.panel-bottom.panel-normal-semabe-crimson-sewbej #panelRight,
+.panel-bottom.panel-dock-semabe-crimson-sewbej #panelLeft,
+.panel-bottom.panel-dock-semabe-crimson-sewbej #panelCenter,
+.panel-bottom.panel-dock-semabe-crimson-sewbej #panelRight,
+.panel-bottom.panel-two-piece-semabe-crimson-sewbej #panelLeft,
+.panel-bottom.panel-two-piece-semabe-crimson-sewbej #panelCenter,
+.panel-bottom.panel-two-piece-semabe-crimson-sewbej #panelRight,
+.panel-bottom.panel-three-piece-semabe-crimson-sewbej #panelLeft,
+.panel-bottom.panel-three-piece-semabe-crimson-sewbej #panelCenter,
+.panel-bottom.panel-three-piece-semabe-crimson-sewbej #panelRight {
     box-shadow: 0px 0px 7px 5px
-        rgba(0,0,0,0); /*shadow-color*/
+        rgba(0,0,0,0.0); /*shadow-color*/
     border-color: rgba(13,0,3,1.0);
     background-gradient-direction: vertical;
     background-gradient-start: rgba(174,59,90,
@@ -144,20 +144,20 @@
         1); /*opacity*/
 }
 
-.panel-bottom.panel-normal-semabe-falcon-fully #panelLeft,
-.panel-bottom.panel-normal-semabe-falcon-fully #panelCenter,
-.panel-bottom.panel-normal-semabe-falcon-fully #panelRight,
-.panel-bottom.panel-dock-semabe-falcon-fully #panelLeft,
-.panel-bottom.panel-dock-semabe-falcon-fully #panelCenter,
-.panel-bottom.panel-dock-semabe-falcon-fully #panelRight,
-.panel-bottom.panel-two-piece-semabe-falcon-fully #panelLeft,
-.panel-bottom.panel-two-piece-semabe-falcon-fully #panelCenter,
-.panel-bottom.panel-two-piece-semabe-falcon-fully #panelRight,
-.panel-bottom.panel-three-piece-semabe-falcon-fully #panelLeft,
-.panel-bottom.panel-three-piece-semabe-falcon-fully #panelCenter,
-.panel-bottom.panel-three-piece-semabe-falcon-fully #panelRight {
+.panel-bottom.panel-normal-semabe-falcon-sewbej #panelLeft,
+.panel-bottom.panel-normal-semabe-falcon-sewbej #panelCenter,
+.panel-bottom.panel-normal-semabe-falcon-sewbej #panelRight,
+.panel-bottom.panel-dock-semabe-falcon-sewbej #panelLeft,
+.panel-bottom.panel-dock-semabe-falcon-sewbej #panelCenter,
+.panel-bottom.panel-dock-semabe-falcon-sewbej #panelRight,
+.panel-bottom.panel-two-piece-semabe-falcon-sewbej #panelLeft,
+.panel-bottom.panel-two-piece-semabe-falcon-sewbej #panelCenter,
+.panel-bottom.panel-two-piece-semabe-falcon-sewbej #panelRight,
+.panel-bottom.panel-three-piece-semabe-falcon-sewbej #panelLeft,
+.panel-bottom.panel-three-piece-semabe-falcon-sewbej #panelCenter,
+.panel-bottom.panel-three-piece-semabe-falcon-sewbej #panelRight {
     box-shadow: 0px 0px 7px 5px
-        rgba(0,0,0,0); /*shadow-color*/
+        rgba(0,0,0,0.0); /*shadow-color*/
     border-color: rgba(13,4,7,1.0);
     background-gradient-direction: vertical;
     background-gradient-start: rgba(144,112,124,
@@ -166,20 +166,20 @@
         1); /*opacity*/
 }
 
-.panel-bottom.panel-normal-semabe-grey-fully #panelLeft,
-.panel-bottom.panel-normal-semabe-grey-fully #panelCenter,
-.panel-bottom.panel-normal-semabe-grey-fully #panelRight,
-.panel-bottom.panel-dock-semabe-grey-fully #panelLeft,
-.panel-bottom.panel-dock-semabe-grey-fully #panelCenter,
-.panel-bottom.panel-dock-semabe-grey-fully #panelRight,
-.panel-bottom.panel-two-piece-semabe-grey-fully #panelLeft,
-.panel-bottom.panel-two-piece-semabe-grey-fully #panelCenter,
-.panel-bottom.panel-two-piece-semabe-grey-fully #panelRight,
-.panel-bottom.panel-three-piece-semabe-grey-fully #panelLeft,
-.panel-bottom.panel-three-piece-semabe-grey-fully #panelCenter,
-.panel-bottom.panel-three-piece-semabe-grey-fully #panelRight {
+.panel-bottom.panel-normal-semabe-grey-sewbej #panelLeft,
+.panel-bottom.panel-normal-semabe-grey-sewbej #panelCenter,
+.panel-bottom.panel-normal-semabe-grey-sewbej #panelRight,
+.panel-bottom.panel-dock-semabe-grey-sewbej #panelLeft,
+.panel-bottom.panel-dock-semabe-grey-sewbej #panelCenter,
+.panel-bottom.panel-dock-semabe-grey-sewbej #panelRight,
+.panel-bottom.panel-two-piece-semabe-grey-sewbej #panelLeft,
+.panel-bottom.panel-two-piece-semabe-grey-sewbej #panelCenter,
+.panel-bottom.panel-two-piece-semabe-grey-sewbej #panelRight,
+.panel-bottom.panel-three-piece-semabe-grey-sewbej #panelLeft,
+.panel-bottom.panel-three-piece-semabe-grey-sewbej #panelCenter,
+.panel-bottom.panel-three-piece-semabe-grey-sewbej #panelRight {
     box-shadow: 0px 0px 7px 5px
-        rgba(0,0,0,0); /*shadow-color*/
+        rgba(0,0,0,0.0); /*shadow-color*/
     border-color: rgba(10,10,10,1.0);
     background-gradient-direction: vertical;
     background-gradient-start: rgba(103,103,103,
@@ -188,20 +188,20 @@
         1); /*opacity*/
 }
 
-.panel-bottom.panel-normal-semabe-steel-fully #panelLeft,
-.panel-bottom.panel-normal-semabe-steel-fully #panelCenter,
-.panel-bottom.panel-normal-semabe-steel-fully #panelRight,
-.panel-bottom.panel-dock-semabe-steel-fully #panelLeft,
-.panel-bottom.panel-dock-semabe-steel-fully #panelCenter,
-.panel-bottom.panel-dock-semabe-steel-fully #panelRight,
-.panel-bottom.panel-two-piece-semabe-steel-fully #panelLeft,
-.panel-bottom.panel-two-piece-semabe-steel-fully #panelCenter,
-.panel-bottom.panel-two-piece-semabe-steel-fully #panelRight,
-.panel-bottom.panel-three-piece-semabe-steel-fully #panelLeft,
-.panel-bottom.panel-three-piece-semabe-steel-fully #panelCenter,
-.panel-bottom.panel-three-piece-semabe-steel-fully #panelRight {
+.panel-bottom.panel-normal-semabe-steel-sewbej #panelLeft,
+.panel-bottom.panel-normal-semabe-steel-sewbej #panelCenter,
+.panel-bottom.panel-normal-semabe-steel-sewbej #panelRight,
+.panel-bottom.panel-dock-semabe-steel-sewbej #panelLeft,
+.panel-bottom.panel-dock-semabe-steel-sewbej #panelCenter,
+.panel-bottom.panel-dock-semabe-steel-sewbej #panelRight,
+.panel-bottom.panel-two-piece-semabe-steel-sewbej #panelLeft,
+.panel-bottom.panel-two-piece-semabe-steel-sewbej #panelCenter,
+.panel-bottom.panel-two-piece-semabe-steel-sewbej #panelRight,
+.panel-bottom.panel-three-piece-semabe-steel-sewbej #panelLeft,
+.panel-bottom.panel-three-piece-semabe-steel-sewbej #panelCenter,
+.panel-bottom.panel-three-piece-semabe-steel-sewbej #panelRight {
     box-shadow: 0px 0px 7px 5px
-        rgba(0,0,0,0); /*shadow-color*/
+        rgba(0,0,0,0.0); /*shadow-color*/
     border-color: rgba(8,8,10,1.0);
     background-gradient-direction: vertical;
     background-gradient-start: rgba(93,93,103,
@@ -210,20 +210,20 @@
         1); /*opacity*/
 }
 
-.panel-bottom.panel-normal-semabe-mint-fully #panelLeft,
-.panel-bottom.panel-normal-semabe-mint-fully #panelCenter,
-.panel-bottom.panel-normal-semabe-mint-fully #panelRight,
-.panel-bottom.panel-dock-semabe-mint-fully #panelLeft,
-.panel-bottom.panel-dock-semabe-mint-fully #panelCenter,
-.panel-bottom.panel-dock-semabe-mint-fully #panelRight,
-.panel-bottom.panel-two-piece-semabe-mint-fully #panelLeft,
-.panel-bottom.panel-two-piece-semabe-mint-fully #panelCenter,
-.panel-bottom.panel-two-piece-semabe-mint-fully #panelRight,
-.panel-bottom.panel-three-piece-semabe-mint-fully #panelLeft,
-.panel-bottom.panel-three-piece-semabe-mint-fully #panelCenter,
-.panel-bottom.panel-three-piece-semabe-mint-fully #panelRight {
+.panel-bottom.panel-normal-semabe-mint-sewbej #panelLeft,
+.panel-bottom.panel-normal-semabe-mint-sewbej #panelCenter,
+.panel-bottom.panel-normal-semabe-mint-sewbej #panelRight,
+.panel-bottom.panel-dock-semabe-mint-sewbej #panelLeft,
+.panel-bottom.panel-dock-semabe-mint-sewbej #panelCenter,
+.panel-bottom.panel-dock-semabe-mint-sewbej #panelRight,
+.panel-bottom.panel-two-piece-semabe-mint-sewbej #panelLeft,
+.panel-bottom.panel-two-piece-semabe-mint-sewbej #panelCenter,
+.panel-bottom.panel-two-piece-semabe-mint-sewbej #panelRight,
+.panel-bottom.panel-three-piece-semabe-mint-sewbej #panelLeft,
+.panel-bottom.panel-three-piece-semabe-mint-sewbej #panelCenter,
+.panel-bottom.panel-three-piece-semabe-mint-sewbej #panelRight {
     box-shadow: 0px 0px 7px 5px
-        rgba(0,0,0,0); /*shadow-color*/
+        rgba(0,0,0,0.0); /*shadow-color*/
     border-color: rgba(0,13,6,1.0);
     background-gradient-direction: vertical;
     background-gradient-start: rgba(43,143,90,
@@ -232,20 +232,20 @@
         1); /*opacity*/
 }
 
-.panel-bottom.panel-normal-semabe-nordic-fully #panelLeft,
-.panel-bottom.panel-normal-semabe-nordic-fully #panelCenter,
-.panel-bottom.panel-normal-semabe-nordic-fully #panelRight,
-.panel-bottom.panel-dock-semabe-nordic-fully #panelLeft,
-.panel-bottom.panel-dock-semabe-nordic-fully #panelCenter,
-.panel-bottom.panel-dock-semabe-nordic-fully #panelRight,
-.panel-bottom.panel-two-piece-semabe-nordic-fully #panelLeft,
-.panel-bottom.panel-two-piece-semabe-nordic-fully #panelCenter,
-.panel-bottom.panel-two-piece-semabe-nordic-fully #panelRight,
-.panel-bottom.panel-three-piece-semabe-nordic-fully #panelLeft,
-.panel-bottom.panel-three-piece-semabe-nordic-fully #panelCenter,
-.panel-bottom.panel-three-piece-semabe-nordic-fully #panelRight {
+.panel-bottom.panel-normal-semabe-nordic-sewbej #panelLeft,
+.panel-bottom.panel-normal-semabe-nordic-sewbej #panelCenter,
+.panel-bottom.panel-normal-semabe-nordic-sewbej #panelRight,
+.panel-bottom.panel-dock-semabe-nordic-sewbej #panelLeft,
+.panel-bottom.panel-dock-semabe-nordic-sewbej #panelCenter,
+.panel-bottom.panel-dock-semabe-nordic-sewbej #panelRight,
+.panel-bottom.panel-two-piece-semabe-nordic-sewbej #panelLeft,
+.panel-bottom.panel-two-piece-semabe-nordic-sewbej #panelCenter,
+.panel-bottom.panel-two-piece-semabe-nordic-sewbej #panelRight,
+.panel-bottom.panel-three-piece-semabe-nordic-sewbej #panelLeft,
+.panel-bottom.panel-three-piece-semabe-nordic-sewbej #panelCenter,
+.panel-bottom.panel-three-piece-semabe-nordic-sewbej #panelRight {
     box-shadow: 0px 0px 7px 5px
-        rgba(0,0,0,0); /*shadow-color*/
+        rgba(0,0,0,0.0); /*shadow-color*/
     border-color: rgba(4,7,15,1.0);
     background-gradient-direction: vertical;
     background-gradient-start: rgba(111,124,154,
@@ -254,20 +254,20 @@
         1); /*opacity*/
 }
 
-.panel-bottom.panel-normal-semabe-violet-fully #panelLeft,
-.panel-bottom.panel-normal-semabe-violet-fully #panelCenter,
-.panel-bottom.panel-normal-semabe-violet-fully #panelRight,
-.panel-bottom.panel-dock-semabe-violet-fully #panelLeft,
-.panel-bottom.panel-dock-semabe-violet-fully #panelCenter,
-.panel-bottom.panel-dock-semabe-violet-fully #panelRight,
-.panel-bottom.panel-two-piece-semabe-violet-fully #panelLeft,
-.panel-bottom.panel-two-piece-semabe-violet-fully #panelCenter,
-.panel-bottom.panel-two-piece-semabe-violet-fully #panelRight,
-.panel-bottom.panel-three-piece-semabe-violet-fully #panelLeft,
-.panel-bottom.panel-three-piece-semabe-violet-fully #panelCenter,
-.panel-bottom.panel-three-piece-semabe-violet-fully #panelRight {
+.panel-bottom.panel-normal-semabe-violet-sewbej #panelLeft,
+.panel-bottom.panel-normal-semabe-violet-sewbej #panelCenter,
+.panel-bottom.panel-normal-semabe-violet-sewbej #panelRight,
+.panel-bottom.panel-dock-semabe-violet-sewbej #panelLeft,
+.panel-bottom.panel-dock-semabe-violet-sewbej #panelCenter,
+.panel-bottom.panel-dock-semabe-violet-sewbej #panelRight,
+.panel-bottom.panel-two-piece-semabe-violet-sewbej #panelLeft,
+.panel-bottom.panel-two-piece-semabe-violet-sewbej #panelCenter,
+.panel-bottom.panel-two-piece-semabe-violet-sewbej #panelRight,
+.panel-bottom.panel-three-piece-semabe-violet-sewbej #panelLeft,
+.panel-bottom.panel-three-piece-semabe-violet-sewbej #panelCenter,
+.panel-bottom.panel-three-piece-semabe-violet-sewbej #panelRight {
     box-shadow: 0px 0px 7px 5px
-        rgba(0,0,0,0); /*shadow-color*/
+        rgba(0,0,0,0.0); /*shadow-color*/
     border-color: rgba(13,0,13,1.0);
     background-gradient-direction: vertical;
     background-gradient-start: rgba(143,74,143,
@@ -276,27 +276,27 @@
         1); /*opacity*/
 }
 
-.panel-bottom.panel-normal-mint-y-fully #panelLeft,
-.panel-bottom.panel-normal-custom-fully #panelLeft,
-.panel-bottom.panel-normal-mint-y-dark-fully #panelLeft,
-.panel-bottom.panel-normal-semabe-azure-fully #panelLeft,
-.panel-bottom.panel-normal-semabe-cinnamon-fully #panelLeft,
-.panel-bottom.panel-normal-semabe-crimson-fully #panelLeft,
-.panel-bottom.panel-normal-semabe-falcon-fully #panelLeft,
-.panel-bottom.panel-normal-semabe-grey-fully #panelLeft,
-.panel-bottom.panel-normal-semabe-steel-fully #panelLeft,
-.panel-bottom.panel-normal-semabe-mint-fully #panelLeft,
-.panel-bottom.panel-normal-semabe-nordic-fully #panelLeft,
-.panel-bottom.panel-normal-semabe-violet-fully #panelLeft {
+.panel-bottom.panel-normal-mint-y-sewbej #panelLeft,
+.panel-bottom.panel-normal-custom-sewbej #panelLeft,
+.panel-bottom.panel-normal-mint-y-dark-sewbej #panelLeft,
+.panel-bottom.panel-normal-semabe-azure-sewbej #panelLeft,
+.panel-bottom.panel-normal-semabe-cinnamon-sewbej #panelLeft,
+.panel-bottom.panel-normal-semabe-crimson-sewbej #panelLeft,
+.panel-bottom.panel-normal-semabe-falcon-sewbej #panelLeft,
+.panel-bottom.panel-normal-semabe-grey-sewbej #panelLeft,
+.panel-bottom.panel-normal-semabe-steel-sewbej #panelLeft,
+.panel-bottom.panel-normal-semabe-mint-sewbej #panelLeft,
+.panel-bottom.panel-normal-semabe-nordic-sewbej #panelLeft,
+.panel-bottom.panel-normal-semabe-violet-sewbej #panelLeft {
     border-top: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-left: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-right: 0;
     border-bottom: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-radius: 
         12px /*border-radius*/
@@ -306,51 +306,51 @@
     margin: 0;
 }
 
-.panel-bottom.panel-normal-mint-y-fully #panelCenter,
-.panel-bottom.panel-normal-custom-fully #panelCenter,
-.panel-bottom.panel-normal-mint-y-dark-fully #panelCenter,
-.panel-bottom.panel-normal-semabe-azure-fully #panelCenter,
-.panel-bottom.panel-normal-semabe-cinnamon-fully #panelCenter,
-.panel-bottom.panel-normal-semabe-crimson-fully #panelCenter,
-.panel-bottom.panel-normal-semabe-falcon-fully #panelCenter,
-.panel-bottom.panel-normal-semabe-grey-fully #panelCenter,
-.panel-bottom.panel-normal-semabe-steel-fully #panelCenter,
-.panel-bottom.panel-normal-semabe-mint-fully #panelCenter,
-.panel-bottom.panel-normal-semabe-nordic-fully #panelCenter,
-.panel-bottom.panel-normal-semabe-violet-fully #panelCenter {
+.panel-bottom.panel-normal-mint-y-sewbej #panelCenter,
+.panel-bottom.panel-normal-custom-sewbej #panelCenter,
+.panel-bottom.panel-normal-mint-y-dark-sewbej #panelCenter,
+.panel-bottom.panel-normal-semabe-azure-sewbej #panelCenter,
+.panel-bottom.panel-normal-semabe-cinnamon-sewbej #panelCenter,
+.panel-bottom.panel-normal-semabe-crimson-sewbej #panelCenter,
+.panel-bottom.panel-normal-semabe-falcon-sewbej #panelCenter,
+.panel-bottom.panel-normal-semabe-grey-sewbej #panelCenter,
+.panel-bottom.panel-normal-semabe-steel-sewbej #panelCenter,
+.panel-bottom.panel-normal-semabe-mint-sewbej #panelCenter,
+.panel-bottom.panel-normal-semabe-nordic-sewbej #panelCenter,
+.panel-bottom.panel-normal-semabe-violet-sewbej #panelCenter {
     border-top: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-left: 0;
     border-right: 0;
     border-bottom: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-radius: 0;
     margin: 0;
 }
 
-.panel-bottom.panel-normal-mint-y-fully #panelRight,
-.panel-bottom.panel-normal-custom-fully #panelRight,
-.panel-bottom.panel-normal-mint-y-dark-fully #panelRight,
-.panel-bottom.panel-normal-semabe-azure-fully #panelRight,
-.panel-bottom.panel-normal-semabe-cinnamon-fully #panelRight,
-.panel-bottom.panel-normal-semabe-crimson-fully #panelRight,
-.panel-bottom.panel-normal-semabe-falcon-fully #panelRight,
-.panel-bottom.panel-normal-semabe-grey-fully #panelRight,
-.panel-bottom.panel-normal-semabe-steel-fully #panelRight,
-.panel-bottom.panel-normal-semabe-mint-fully #panelRight,
-.panel-bottom.panel-normal-semabe-nordic-fully #panelRight,
-.panel-bottom.panel-normal-semabe-violet-fully #panelRight {
+.panel-bottom.panel-normal-mint-y-sewbej #panelRight,
+.panel-bottom.panel-normal-custom-sewbej #panelRight,
+.panel-bottom.panel-normal-mint-y-dark-sewbej #panelRight,
+.panel-bottom.panel-normal-semabe-azure-sewbej #panelRight,
+.panel-bottom.panel-normal-semabe-cinnamon-sewbej #panelRight,
+.panel-bottom.panel-normal-semabe-crimson-sewbej #panelRight,
+.panel-bottom.panel-normal-semabe-falcon-sewbej #panelRight,
+.panel-bottom.panel-normal-semabe-grey-sewbej #panelRight,
+.panel-bottom.panel-normal-semabe-steel-sewbej #panelRight,
+.panel-bottom.panel-normal-semabe-mint-sewbej #panelRight,
+.panel-bottom.panel-normal-semabe-nordic-sewbej #panelRight,
+.panel-bottom.panel-normal-semabe-violet-sewbej #panelRight {
     border-top: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-left: 0;
     border-right: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-bottom: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-radius: 0 
         12px /*border-radius*/ 
@@ -359,111 +359,29 @@
     margin: 0;
 }
 
-.panel-normal-mint-y-fully,
-#panel.panel-normal-mint-y-fully,
-.panel-normal-mint-y-dark-fully,
-#panel.panel-normal-mint-y-dark-fully,
-.panel-normal-custom-fully,
-#panel.panel-normal-custom-fully,
-.panel-normal-semabe-azure-fully,
-#panel.panel-normal-semabe-azure-fully,
-.panel-normal-semabe-cinnamon-fully,
-#panel.panel-normal-semabe-cinnamon-fully,
-.panel-normal-semabe-crimson-fully,
-#panel.panel-normal-semabe-crimson-fully,
-.panel-normal-semabe-falcon-fully,
-#panel.panel-normal-semabe-falcon-fully,
-.panel-normal-semabe-grey-fully,
-#panel.panel-normal-semabe-grey-fully,
-.panel-normal-semabe-steel-fully,
-#panel.panel-normal-semabe-steel-fully,
-.panel-normal-semabe-mint-fully,
-#panel.panel-normal-semabe-mint-fully,
-.panel-normal-semabe-nordic-fully,
-#panel.panel-normal-semabe-nordic-fully,
-.panel-normal-semabe-violet-fully,
-#panel.panel-normal-semabe-violet-fully {
-    box-shadow: none;
-    background-gradient-direction: vertical;
-    background-gradient-start: transparent;
-    background-gradient-end: transparent;
-    background: transparent;
-    border: 0 transparent;
-    font-size: 1em;
-    padding: 0
-}
-
-.panel-bottom.panel-normal-mint-y-fully .applet-box,
-.panel-bottom.panel-normal-custom-fully .applet-box,
-.panel-bottom.panel-normal-mint-y-dark-fully .applet-box,
-.panel-bottom.panel-normal-semabe-azure-fully .applet-box,
-.panel-bottom.panel-normal-semabe-cinnamon-fully .applet-box,
-.panel-bottom.panel-normal-semabe-crimson-fully .applet-box,
-.panel-bottom.panel-normal-semabe-falcon-fully .applet-box,
-.panel-bottom.panel-normal-semabe-grey-fully .applet-box,
-.panel-bottom.panel-normal-semabe-steel-fully .applet-box,
-.panel-bottom.panel-normal-semabe-mint-fully .applet-box,
-.panel-bottom.panel-normal-semabe-nordic-fully .applet-box,
-.panel-bottom.panel-normal-semabe-violet-fully .applet-box {
-    border-radius: 
-        12px /*border-radius*/
-}
-
-.panel-bottom.panel-normal-mint-y-fully .grouped-window-list-item-box,
-.panel-bottom.panel-normal-custom-fully .grouped-window-list-item-box,
-.panel-bottom.panel-normal-mint-y-dark-fully .grouped-window-list-item-box,
-.panel-bottom.panel-normal-semabe-azure-fully .grouped-window-list-item-box,
-.panel-bottom.panel-normal-semabe-cinnamon-fully .grouped-window-list-item-box,
-.panel-bottom.panel-normal-semabe-crimson-fully .grouped-window-list-item-box,
-.panel-bottom.panel-normal-semabe-falcon-fully .grouped-window-list-item-box,
-.panel-bottom.panel-normal-semabe-grey-fully .grouped-window-list-item-box,
-.panel-bottom.panel-normal-semabe-steel-fully .grouped-window-list-item-box,
-.panel-bottom.panel-normal-semabe-mint-fully .grouped-window-list-item-box,
-.panel-bottom.panel-normal-semabe-nordic-fully .grouped-window-list-item-box,
-.panel-bottom.panel-normal-semabe-violet-fully .grouped-window-list-item-box {
-    border-radius: 
-        12px /*border-radius*/
-}
-
-.panel-bottom.panel-normal-mint-y-fully .window-list-item-box,
-.panel-bottom.panel-normal-custom-fully .window-list-item-box,
-.panel-bottom.panel-normal-mint-y-dark-fully .window-list-item-box,
-.panel-bottom.panel-normal-semabe-azure-fully .window-list-item-box,
-.panel-bottom.panel-normal-semabe-cinnamon-fully .window-list-item-box,
-.panel-bottom.panel-normal-semabe-crimson-fully .window-list-item-box,
-.panel-bottom.panel-normal-semabe-falcon-fully .window-list-item-box,
-.panel-bottom.panel-normal-semabe-grey-fully .window-list-item-box,
-.panel-bottom.panel-normal-semabe-steel-fully .window-list-item-box,
-.panel-bottom.panel-normal-semabe-mint-fully .window-list-item-box,
-.panel-bottom.panel-normal-semabe-nordic-fully .window-list-item-box,
-.panel-bottom.panel-normal-semabe-violet-fully .window-list-item-box {
-    border-radius: 
-        12px /*border-radius*/
-}
-
-.panel-bottom.panel-two-piece-mint-y-fully #panelLeft,
-.panel-bottom.panel-two-piece-custom-fully #panelLeft,
-.panel-bottom.panel-two-piece-mint-y-dark-fully #panelLeft,
-.panel-bottom.panel-two-piece-semabe-azure-fully #panelLeft,
-.panel-bottom.panel-two-piece-semabe-cinnamon-fully #panelLeft,
-.panel-bottom.panel-two-piece-semabe-crimson-fully #panelLeft,
-.panel-bottom.panel-two-piece-semabe-falcon-fully #panelLeft,
-.panel-bottom.panel-two-piece-semabe-grey-fully #panelLeft,
-.panel-bottom.panel-two-piece-semabe-steel-fully #panelLeft,
-.panel-bottom.panel-two-piece-semabe-mint-fully #panelLeft,
-.panel-bottom.panel-two-piece-semabe-nordic-fully #panelLeft,
-.panel-bottom.panel-two-piece-semabe-violet-fully #panelLeft {
+.panel-bottom.panel-two-piece-mint-y-sewbej #panelLeft,
+.panel-bottom.panel-two-piece-custom-sewbej #panelLeft,
+.panel-bottom.panel-two-piece-mint-y-dark-sewbej #panelLeft,
+.panel-bottom.panel-two-piece-semabe-azure-sewbej #panelLeft,
+.panel-bottom.panel-two-piece-semabe-cinnamon-sewbej #panelLeft,
+.panel-bottom.panel-two-piece-semabe-crimson-sewbej #panelLeft,
+.panel-bottom.panel-two-piece-semabe-falcon-sewbej #panelLeft,
+.panel-bottom.panel-two-piece-semabe-grey-sewbej #panelLeft,
+.panel-bottom.panel-two-piece-semabe-steel-sewbej #panelLeft,
+.panel-bottom.panel-two-piece-semabe-mint-sewbej #panelLeft,
+.panel-bottom.panel-two-piece-semabe-nordic-sewbej #panelLeft,
+.panel-bottom.panel-two-piece-semabe-violet-sewbej #panelLeft {
     border-top: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-left: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-right: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-bottom: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-radius: 
         12px /*border-radius*/
@@ -471,57 +389,57 @@
     margin: 0;
 }
 
-.panel-bottom.panel-two-piece-mint-y-fully #panelCenter,
-.panel-bottom.panel-two-piece-custom-fully #panelCenter,
-.panel-bottom.panel-two-piece-mint-y-dark-fully #panelCenter,
-.panel-bottom.panel-two-piece-semabe-azure-fully #panelCenter,
-.panel-bottom.panel-two-piece-semabe-cinnamon-fully #panelCenter,
-.panel-bottom.panel-two-piece-semabe-crimson-fully #panelCenter,
-.panel-bottom.panel-two-piece-semabe-falcon-fully #panelCenter,
-.panel-bottom.panel-two-piece-semabe-grey-fully #panelCenter,
-.panel-bottom.panel-two-piece-semabe-steel-fully #panelCenter,
-.panel-bottom.panel-two-piece-semabe-mint-fully #panelCenter,
-.panel-bottom.panel-two-piece-semabe-nordic-fully #panelCenter,
-.panel-bottom.panel-two-piece-semabe-violet-fully #panelCenter {
+.panel-bottom.panel-two-piece-mint-y-sewbej #panelCenter,
+.panel-bottom.panel-two-piece-custom-sewbej #panelCenter,
+.panel-bottom.panel-two-piece-mint-y-dark-sewbej #panelCenter,
+.panel-bottom.panel-two-piece-semabe-azure-sewbej #panelCenter,
+.panel-bottom.panel-two-piece-semabe-cinnamon-sewbej #panelCenter,
+.panel-bottom.panel-two-piece-semabe-crimson-sewbej #panelCenter,
+.panel-bottom.panel-two-piece-semabe-falcon-sewbej #panelCenter,
+.panel-bottom.panel-two-piece-semabe-grey-sewbej #panelCenter,
+.panel-bottom.panel-two-piece-semabe-steel-sewbej #panelCenter,
+.panel-bottom.panel-two-piece-semabe-mint-sewbej #panelCenter,
+.panel-bottom.panel-two-piece-semabe-nordic-sewbej #panelCenter,
+.panel-bottom.panel-two-piece-semabe-violet-sewbej #panelCenter {
     border-color: transparent;
     background-gradient-direction: vertical;
     background-gradient-start: transparent;
     background-gradient-end: transparent;
     border-top: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-left: 0;
     border-right: 0;
     border-bottom: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-radius: 0;
     margin: 0;
 }
 
-.panel-bottom.panel-two-piece-mint-y-fully #panelRight,
-.panel-bottom.panel-two-piece-custom-fully #panelRight,
-.panel-bottom.panel-two-piece-mint-y-dark-fully #panelRight,
-.panel-bottom.panel-two-piece-semabe-azure-fully #panelRight,
-.panel-bottom.panel-two-piece-semabe-cinnamon-fully #panelRight,
-.panel-bottom.panel-two-piece-semabe-crimson-fully #panelRight,
-.panel-bottom.panel-two-piece-semabe-falcon-fully #panelRight,
-.panel-bottom.panel-two-piece-semabe-steel-fully #panelRight,
-.panel-bottom.panel-two-piece-semabe-grey-fully #panelRight,
-.panel-bottom.panel-two-piece-semabe-mint-fully #panelRight,
-.panel-bottom.panel-two-piece-semabe-nordic-fully #panelRight,
-.panel-bottom.panel-two-piece-semabe-violet-fully #panelRight {
+.panel-bottom.panel-two-piece-mint-y-sewbej #panelRight,
+.panel-bottom.panel-two-piece-custom-sewbej #panelRight,
+.panel-bottom.panel-two-piece-mint-y-dark-sewbej #panelRight,
+.panel-bottom.panel-two-piece-semabe-azure-sewbej #panelRight,
+.panel-bottom.panel-two-piece-semabe-cinnamon-sewbej #panelRight,
+.panel-bottom.panel-two-piece-semabe-crimson-sewbej #panelRight,
+.panel-bottom.panel-two-piece-semabe-falcon-sewbej #panelRight,
+.panel-bottom.panel-two-piece-semabe-steel-sewbej #panelRight,
+.panel-bottom.panel-two-piece-semabe-grey-sewbej #panelRight,
+.panel-bottom.panel-two-piece-semabe-mint-sewbej #panelRight,
+.panel-bottom.panel-two-piece-semabe-nordic-sewbej #panelRight,
+.panel-bottom.panel-two-piece-semabe-violet-sewbej #panelRight {
     border-top: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-left: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-right: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-bottom: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-radius: 
         12px /*border-radius*/
@@ -529,113 +447,31 @@
     margin: 0;
 }
 
-.panel-two-piece-mint-y-fully,
-#panel.panel-two-piece-mint-y-fully,
-.panel-two-piece-mint-y-dark-fully,
-#panel.panel-two-piece-mint-y-dark-fully,
-.panel-two-piece-custom-fully,
-#panel.panel-two-piece-custom-fully,
-.panel-two-piece-semabe-azure-fully,
-#panel.panel-two-piece-semabe-azure-fully,
-.panel-two-piece-semabe-cinnamon-fully,
-#panel.panel-two-piece-semabe-cinnamon-fully,
-.panel-two-piece-semabe-crimson-fully,
-#panel.panel-two-piece-semabe-crimson-fully,
-.panel-two-piece-semabe-falcon-fully,
-#panel.panel-two-piece-semabe-falcon-fully,
-.panel-two-piece-semabe-grey-fully,
-#panel.panel-two-piece-semabe-grey-fully,
-.panel-two-piece-semabe-steel-fully,
-#panel.panel-two-piece-semabe-steel-fully,
-.panel-two-piece-semabe-mint-fully,
-#panel.panel-two-piece-semabe-mint-fully,
-.panel-two-piece-semabe-nordic-fully,
-#panel.panel-two-piece-semabe-nordic-fully,
-.panel-two-piece-semabe-violet-fully,
-#panel.panel-two-piece-semabe-violet-fully {
-    box-shadow: none;
-    background-gradient-direction: vertical;
-    background-gradient-start: transparent;
-    background-gradient-end: transparent;
-    background: transparent;
-    border: 0 transparent;
-    font-size: 1em;
-    padding: 0
-}
-
-.panel-bottom.panel-two-piece-mint-y-fully .applet-box,
-.panel-bottom.panel-two-piece-custom-fully .applet-box,
-.panel-bottom.panel-two-piece-mint-y-dark-fully .applet-box,
-.panel-bottom.panel-two-piece-semabe-azure-fully .applet-box,
-.panel-bottom.panel-two-piece-semabe-cinnamon-fully .applet-box,
-.panel-bottom.panel-two-piece-semabe-crimson-fully .applet-box,
-.panel-bottom.panel-two-piece-semabe-falcon-fully .applet-box,
-.panel-bottom.panel-two-piece-semabe-grey-fully .applet-box,
-.panel-bottom.panel-two-piece-semabe-steel-fully .applet-box,
-.panel-bottom.panel-two-piece-semabe-mint-fully .applet-box,
-.panel-bottom.panel-two-piece-semabe-nordic-fully .applet-box,
-.panel-bottom.panel-two-piece-semabe-violet-fully .applet-box {
-    border-radius: 
-        12px /*border-radius*/
-}
-
-.panel-bottom.panel-two-piece-mint-y-fully .grouped-window-list-item-box,
-.panel-bottom.panel-two-piece-custom-fully .grouped-window-list-item-box,
-.panel-bottom.panel-two-piece-mint-y-dark-fully .grouped-window-list-item-box,
-.panel-bottom.panel-two-piece-semabe-azure-fully .grouped-window-list-item-box,
-.panel-bottom.panel-two-piece-semabe-cinnamon-fully .grouped-window-list-item-box,
-.panel-bottom.panel-two-piece-semabe-crimson-fully .grouped-window-list-item-box,
-.panel-bottom.panel-two-piece-semabe-falcon-fully .grouped-window-list-item-box,
-.panel-bottom.panel-two-piece-semabe-grey-fully .grouped-window-list-item-box,
-.panel-bottom.panel-two-piece-semabe-steel-fully .grouped-window-list-item-box,
-.panel-bottom.panel-two-piece-semabe-mint-fully .grouped-window-list-item-box,
-.panel-bottom.panel-two-piece-semabe-nordic-fully .grouped-window-list-item-box,
-.panel-bottom.panel-two-piece-semabe-violet-fully .grouped-window-list-item-box {
-    border-radius: 
-        12px /*border-radius*/
-}
-
-.panel-bottom.panel-two-piece-mint-y-fully .window-list-item-box,
-.panel-bottom.panel-two-piece-custom-fully .window-list-item-box,
-.panel-bottom.panel-two-piece-mint-y-dark-fully .window-list-item-box,
-.panel-bottom.panel-two-piece-semabe-azure-fully .window-list-item-box,
-.panel-bottom.panel-two-piece-semabe-cinnamon-fully .window-list-item-box,
-.panel-bottom.panel-two-piece-semabe-crimson-fully .window-list-item-box,
-.panel-bottom.panel-two-piece-semabe-falcon-fully .window-list-item-box,
-.panel-bottom.panel-two-piece-semabe-grey-fully .window-list-item-box,
-.panel-bottom.panel-two-piece-semabe-steel-fully .window-list-item-box,
-.panel-bottom.panel-two-piece-semabe-mint-fully .window-list-item-box,
-.panel-bottom.panel-two-piece-semabe-nordic-fully .window-list-item-box,
-.panel-bottom.panel-two-piece-semabe-violet-fully .window-list-item-box {
-    border-radius: 
-        12px /*border-radius*/
-}
-
-.panel-bottom.panel-dock-mint-y-fully #panelLeft,
-.panel-bottom.panel-dock-custom-fully #panelLeft,
-.panel-bottom.panel-dock-mint-y-dark-fully #panelLeft,
-.panel-bottom.panel-dock-semabe-azure-fully #panelLeft,
-.panel-bottom.panel-dock-semabe-cinnamon-fully #panelLeft,
-.panel-bottom.panel-dock-semabe-crimson-fully #panelLeft,
-.panel-bottom.panel-dock-semabe-falcon-fully #panelLeft,
-.panel-bottom.panel-dock-semabe-grey-fully #panelLeft,
-.panel-bottom.panel-dock-semabe-steel-fully #panelLeft,
-.panel-bottom.panel-dock-semabe-mint-fully #panelLeft,
-.panel-bottom.panel-dock-semabe-nordic-fully #panelLeft,
-.panel-bottom.panel-dock-semabe-violet-fully #panelLeft {
+.panel-bottom.panel-dock-mint-y-sewbej #panelLeft,
+.panel-bottom.panel-dock-custom-sewbej #panelLeft,
+.panel-bottom.panel-dock-mint-y-dark-sewbej #panelLeft,
+.panel-bottom.panel-dock-semabe-azure-sewbej #panelLeft,
+.panel-bottom.panel-dock-semabe-cinnamon-sewbej #panelLeft,
+.panel-bottom.panel-dock-semabe-crimson-sewbej #panelLeft,
+.panel-bottom.panel-dock-semabe-falcon-sewbej #panelLeft,
+.panel-bottom.panel-dock-semabe-grey-sewbej #panelLeft,
+.panel-bottom.panel-dock-semabe-steel-sewbej #panelLeft,
+.panel-bottom.panel-dock-semabe-mint-sewbej #panelLeft,
+.panel-bottom.panel-dock-semabe-nordic-sewbej #panelLeft,
+.panel-bottom.panel-dock-semabe-violet-sewbej #panelLeft {
     border-color: transparent;
     background-gradient-direction: vertical;
     background-gradient-start: transparent;
     background-gradient-end: transparent;
     border-top: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-left: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-right: 0;
     border-bottom: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-radius: 
         12px /*border-radius*/
@@ -645,20 +481,20 @@
     margin: 0;
 }
 
-.panel-bottom.panel-dock-mint-y-fully #panelCenter,
-.panel-bottom.panel-dock-custom-fully #panelCenter,
-.panel-bottom.panel-dock-mint-y-dark-fully #panelCenter,
-.panel-bottom.panel-dock-semabe-azure-fully #panelCenter,
-.panel-bottom.panel-dock-semabe-cinnamon-fully #panelCenter,
-.panel-bottom.panel-dock-semabe-crimson-fully #panelCenter,
-.panel-bottom.panel-dock-semabe-falcon-fully #panelCenter,
-.panel-bottom.panel-dock-semabe-grey-fully #panelCenter,
-.panel-bottom.panel-dock-semabe-steel-fully #panelCenter,
-.panel-bottom.panel-dock-semabe-mint-fully #panelCenter,
-.panel-bottom.panel-dock-semabe-nordic-fully #panelCenter,
-.panel-bottom.panel-dock-semabe-violet-fully #panelCenter {
+.panel-bottom.panel-dock-mint-y-sewbej #panelCenter,
+.panel-bottom.panel-dock-custom-sewbej #panelCenter,
+.panel-bottom.panel-dock-mint-y-dark-sewbej #panelCenter,
+.panel-bottom.panel-dock-semabe-azure-sewbej #panelCenter,
+.panel-bottom.panel-dock-semabe-cinnamon-sewbej #panelCenter,
+.panel-bottom.panel-dock-semabe-crimson-sewbej #panelCenter,
+.panel-bottom.panel-dock-semabe-falcon-sewbej #panelCenter,
+.panel-bottom.panel-dock-semabe-grey-sewbej #panelCenter,
+.panel-bottom.panel-dock-semabe-steel-sewbej #panelCenter,
+.panel-bottom.panel-dock-semabe-mint-sewbej #panelCenter,
+.panel-bottom.panel-dock-semabe-nordic-sewbej #panelCenter,
+.panel-bottom.panel-dock-semabe-violet-sewbej #panelCenter {
     border: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-radius: 
         12px /*border-radius*/
@@ -666,31 +502,31 @@
     margin: 0;
 }
 
-.panel-bottom.panel-dock-mint-y-fully #panelRight,
-.panel-bottom.panel-dock-custom-fully #panelRight,
-.panel-bottom.panel-dock-mint-y-dark-fully #panelRight,
-.panel-bottom.panel-dock-semabe-azure-fully #panelRight,
-.panel-bottom.panel-dock-semabe-cinnamon-fully #panelRight,
-.panel-bottom.panel-dock-semabe-crimson-fully #panelRight,
-.panel-bottom.panel-dock-semabe-falcon-fully #panelRight,
-.panel-bottom.panel-dock-semabe-grey-fully #panelRight,
-.panel-bottom.panel-dock-semabe-steel-fully #panelRight,
-.panel-bottom.panel-dock-semabe-mint-fully #panelRight,
-.panel-bottom.panel-dock-semabe-nordic-fully #panelRight,
-.panel-bottom.panel-dock-semabe-violet-fully #panelRight {
+.panel-bottom.panel-dock-mint-y-sewbej #panelRight,
+.panel-bottom.panel-dock-custom-sewbej #panelRight,
+.panel-bottom.panel-dock-mint-y-dark-sewbej #panelRight,
+.panel-bottom.panel-dock-semabe-azure-sewbej #panelRight,
+.panel-bottom.panel-dock-semabe-cinnamon-sewbej #panelRight,
+.panel-bottom.panel-dock-semabe-crimson-sewbej #panelRight,
+.panel-bottom.panel-dock-semabe-falcon-sewbej #panelRight,
+.panel-bottom.panel-dock-semabe-grey-sewbej #panelRight,
+.panel-bottom.panel-dock-semabe-steel-sewbej #panelRight,
+.panel-bottom.panel-dock-semabe-mint-sewbej #panelRight,
+.panel-bottom.panel-dock-semabe-nordic-sewbej #panelRight,
+.panel-bottom.panel-dock-semabe-violet-sewbej #panelRight {
     border-color: transparent;
     background-gradient-direction: vertical;
     background-gradient-start: transparent;
     background-gradient-end: transparent;
     border-top: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-left: 0;
     border-right: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-bottom: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-radius: 0 
         12px /*border-radius*/ 
@@ -699,126 +535,44 @@
     margin: 0;
 }
 
-.panel-dock-mint-y-fully,
-#panel.panel-dock-mint-y-fully,
-.panel-dock-mint-y-dark-fully,
-#panel.panel-dock-mint-y-dark-fully,
-.panel-dock-custom-fully,
-#panel.panel-dock-custom-fully,
-.panel-dock-semabe-azure-fully,
-#panel.panel-dock-semabe-azure-fully,
-.panel-dock-semabe-cinnamon-fully,
-#panel.panel-dock-semabe-cinnamon-fully,
-.panel-dock-semabe-crimson-fully,
-#panel.panel-dock-semabe-crimson-fully,
-.panel-dock-semabe-falcon-fully,
-#panel.panel-dock-semabe-falcon-fully,
-.panel-dock-semabe-grey-fully,
-#panel.panel-dock-semabe-grey-fully,
-.panel-dock-semabe-steel-fully,
-#panel.panel-dock-semabe-steel-fully,
-.panel-dock-semabe-mint-fully,
-#panel.panel-dock-semabe-mint-fully,
-.panel-dock-semabe-nordic-fully,
-#panel.panel-dock-semabe-nordic-fully,
-.panel-dock-semabe-violet-fully,
-#panel.panel-dock-semabe-violet-fully {
-    box-shadow: none;
-    background-gradient-direction: vertical;
-    background-gradient-start: transparent;
-    background-gradient-end: transparent;
-    background: transparent;
-    border: 0 transparent;
-    font-size: 1em;
-    padding: 0
-}
-
-.panel-bottom.panel-dock-mint-y-fully .applet-box,
-.panel-bottom.panel-dock-custom-fully .applet-box,
-.panel-bottom.panel-dock-mint-y-dark-fully .applet-box,
-.panel-bottom.panel-dock-semabe-azure-fully .applet-box,
-.panel-bottom.panel-dock-semabe-cinnamon-fully .applet-box,
-.panel-bottom.panel-dock-semabe-crimson-fully .applet-box,
-.panel-bottom.panel-dock-semabe-falcon-fully .applet-box,
-.panel-bottom.panel-dock-semabe-grey-fully .applet-box,
-.panel-bottom.panel-dock-semabe-steel-fully .applet-box,
-.panel-bottom.panel-dock-semabe-mint-fully .applet-box,
-.panel-bottom.panel-dock-semabe-nordic-fully .applet-box,
-.panel-bottom.panel-dock-semabe-violet-fully .applet-box {
-    border-radius: 
-        12px /*border-radius*/
-}
-
-.panel-bottom.panel-dock-mint-y-fully .grouped-window-list-item-box,
-.panel-bottom.panel-dock-custom-fully .grouped-window-list-item-box,
-.panel-bottom.panel-dock-mint-y-dark-fully .grouped-window-list-item-box,
-.panel-bottom.panel-dock-semabe-azure-fully .grouped-window-list-item-box,
-.panel-bottom.panel-dock-semabe-cinnamon-fully .grouped-window-list-item-box,
-.panel-bottom.panel-dock-semabe-crimson-fully .grouped-window-list-item-box,
-.panel-bottom.panel-dock-semabe-falcon-fully .grouped-window-list-item-box,
-.panel-bottom.panel-dock-semabe-grey-fully .grouped-window-list-item-box,
-.panel-bottom.panel-dock-semabe-steel-fully .grouped-window-list-item-box,
-.panel-bottom.panel-dock-semabe-mint-fully .grouped-window-list-item-box,
-.panel-bottom.panel-dock-semabe-nordic-fully .grouped-window-list-item-box,
-.panel-bottom.panel-dock-semabe-violet-fully .grouped-window-list-item-box {
-    border-radius: 
-        12px /*border-radius*/
-}
-
-.panel-bottom.panel-dock-mint-y-fully .window-list-item-box,
-.panel-bottom.panel-dock-custom-fully .window-list-item-box,
-.panel-bottom.panel-dock-mint-y-dark-fully .window-list-item-box,
-.panel-bottom.panel-dock-semabe-azure-fully .window-list-item-box,
-.panel-bottom.panel-dock-semabe-cinnamon-fully .window-list-item-box,
-.panel-bottom.panel-dock-semabe-crimson-fully .window-list-item-box,
-.panel-bottom.panel-dock-semabe-falcon-fully .window-list-item-box,
-.panel-bottom.panel-dock-semabe-grey-fully .window-list-item-box,
-.panel-bottom.panel-dock-semabe-steel-fully .window-list-item-box,
-.panel-bottom.panel-dock-semabe-mint-fully .window-list-item-box,
-.panel-bottom.panel-dock-semabe-nordic-fully .window-list-item-box,
-.panel-bottom.panel-dock-semabe-violet-fully .window-list-item-box {
-    border-radius: 
-        12px /*border-radius*/
-}
-
-.panel-bottom.panel-three-piece-mint-y-fully #panelLeft,
-.panel-bottom.panel-three-piece-custom-fully #panelLeft,
-.panel-bottom.panel-three-piece-mint-y-dark-fully #panelLeft,
-.panel-bottom.panel-three-piece-semabe-azure-fully #panelLeft,
-.panel-bottom.panel-three-piece-semabe-cinnamon-fully #panelLeft,
-.panel-bottom.panel-three-piece-semabe-crimson-fully #panelLeft,
-.panel-bottom.panel-three-piece-semabe-falcon-fully #panelLeft,
-.panel-bottom.panel-three-piece-semabe-grey-fully #panelLeft,
-.panel-bottom.panel-three-piece-semabe-steel-fully #panelLeft,
-.panel-bottom.panel-three-piece-semabe-mint-fully #panelLeft,
-.panel-bottom.panel-three-piece-semabe-nordic-fully #panelLeft,
-.panel-bottom.panel-three-piece-semabe-violet-fully #panelLeft,
-.panel-bottom.panel-three-piece-mint-y-fully #panelCenter,
-.panel-bottom.panel-three-piece-custom-fully #panelCenter,
-.panel-bottom.panel-three-piece-mint-y-dark-fully #panelCenter,
-.panel-bottom.panel-three-piece-semabe-azure-fully #panelCenter,
-.panel-bottom.panel-three-piece-semabe-cinnamon-fully #panelCenter,
-.panel-bottom.panel-three-piece-semabe-crimson-fully #panelCenter,
-.panel-bottom.panel-three-piece-semabe-falcon-fully #panelCenter,
-.panel-bottom.panel-three-piece-semabe-grey-fully #panelCenter,
-.panel-bottom.panel-three-piece-semabe-steel-fully #panelCenter,
-.panel-bottom.panel-three-piece-semabe-mint-fully #panelCenter,
-.panel-bottom.panel-three-piece-semabe-nordic-fully #panelCenter,
-.panel-bottom.panel-three-piece-semabe-violet-fully #panelCenter,
-.panel-bottom.panel-three-piece-mint-y-fully #panelRight,
-.panel-bottom.panel-three-piece-custom-fully #panelRight,
-.panel-bottom.panel-three-piece-mint-y-dark-fully #panelRight,
-.panel-bottom.panel-three-piece-semabe-azure-fully #panelRight,
-.panel-bottom.panel-three-piece-semabe-cinnamon-fully #panelRight,
-.panel-bottom.panel-three-piece-semabe-crimson-fully #panelRight,
-.panel-bottom.panel-three-piece-semabe-falcon-fully #panelRight,
-.panel-bottom.panel-three-piece-semabe-grey-fully #panelRight,
-.panel-bottom.panel-three-piece-semabe-steel-fully #panelRight,
-.panel-bottom.panel-three-piece-semabe-mint-fully #panelRight,
-.panel-bottom.panel-three-piece-semabe-nordic-fully #panelRight,
-.panel-bottom.panel-three-piece-semabe-violet-fully #panelRight {
+.panel-bottom.panel-three-piece-mint-y-sewbej #panelLeft,
+.panel-bottom.panel-three-piece-custom-sewbej #panelLeft,
+.panel-bottom.panel-three-piece-mint-y-dark-sewbej #panelLeft,
+.panel-bottom.panel-three-piece-semabe-azure-sewbej #panelLeft,
+.panel-bottom.panel-three-piece-semabe-cinnamon-sewbej #panelLeft,
+.panel-bottom.panel-three-piece-semabe-crimson-sewbej #panelLeft,
+.panel-bottom.panel-three-piece-semabe-falcon-sewbej #panelLeft,
+.panel-bottom.panel-three-piece-semabe-grey-sewbej #panelLeft,
+.panel-bottom.panel-three-piece-semabe-steel-sewbej #panelLeft,
+.panel-bottom.panel-three-piece-semabe-mint-sewbej #panelLeft,
+.panel-bottom.panel-three-piece-semabe-nordic-sewbej #panelLeft,
+.panel-bottom.panel-three-piece-semabe-violet-sewbej #panelLeft,
+.panel-bottom.panel-three-piece-mint-y-sewbej #panelCenter,
+.panel-bottom.panel-three-piece-custom-sewbej #panelCenter,
+.panel-bottom.panel-three-piece-mint-y-dark-sewbej #panelCenter,
+.panel-bottom.panel-three-piece-semabe-azure-sewbej #panelCenter,
+.panel-bottom.panel-three-piece-semabe-cinnamon-sewbej #panelCenter,
+.panel-bottom.panel-three-piece-semabe-crimson-sewbej #panelCenter,
+.panel-bottom.panel-three-piece-semabe-falcon-sewbej #panelCenter,
+.panel-bottom.panel-three-piece-semabe-grey-sewbej #panelCenter,
+.panel-bottom.panel-three-piece-semabe-steel-sewbej #panelCenter,
+.panel-bottom.panel-three-piece-semabe-mint-sewbej #panelCenter,
+.panel-bottom.panel-three-piece-semabe-nordic-sewbej #panelCenter,
+.panel-bottom.panel-three-piece-semabe-violet-sewbej #panelCenter,
+.panel-bottom.panel-three-piece-mint-y-sewbej #panelRight,
+.panel-bottom.panel-three-piece-custom-sewbej #panelRight,
+.panel-bottom.panel-three-piece-mint-y-dark-sewbej #panelRight,
+.panel-bottom.panel-three-piece-semabe-azure-sewbej #panelRight,
+.panel-bottom.panel-three-piece-semabe-cinnamon-sewbej #panelRight,
+.panel-bottom.panel-three-piece-semabe-crimson-sewbej #panelRight,
+.panel-bottom.panel-three-piece-semabe-falcon-sewbej #panelRight,
+.panel-bottom.panel-three-piece-semabe-grey-sewbej #panelRight,
+.panel-bottom.panel-three-piece-semabe-steel-sewbej #panelRight,
+.panel-bottom.panel-three-piece-semabe-mint-sewbej #panelRight,
+.panel-bottom.panel-three-piece-semabe-nordic-sewbej #panelRight,
+.panel-bottom.panel-three-piece-semabe-violet-sewbej #panelRight {
     border: 
-        1px /*border-thickness*/
+        1px /*border-width*/
     ;
     border-radius: 
         12px /*border-radius*/
@@ -826,30 +580,102 @@
     margin: 0;
 }
 
-.panel-three-piece-mint-y-fully,
-#panel.panel-three-piece-mint-y-fully,
-.panel-three-piece-mint-y-dark-fully,
-#panel.panel-three-piece-mint-y-dark-fully,
-.panel-three-piece-custom-fully,
-#panel.panel-three-piece-custom-fully,
-.panel-three-piece-semabe-azure-fully,
-#panel.panel-three-piece-semabe-azure-fully,
-.panel-three-piece-semabe-cinnamon-fully,
-#panel.panel-three-piece-semabe-cinnamon-fully,
-.panel-three-piece-semabe-crimson-fully,
-#panel.panel-three-piece-semabe-crimson-fully,
-.panel-three-piece-semabe-falcon-fully,
-#panel.panel-three-piece-semabe-falcon-fully,
-.panel-three-piece-semabe-grey-fully,
-#panel.panel-three-piece-semabe-grey-fully,
-.panel-three-piece-semabe-steel-fully,
-#panel.panel-three-piece-semabe-steel-fully,
-.panel-three-piece-semabe-mint-fully,
-#panel.panel-three-piece-semabe-mint-fully,
-.panel-three-piece-semabe-nordic-fully,
-#panel.panel-three-piece-semabe-nordic-fully,
-.panel-three-piece-semabe-violet-fully,
-#panel.panel-three-piece-semabe-violet-fully {
+.panel-normal-mint-y-sewbej,
+#panel.panel-normal-mint-y-sewbej,
+.panel-normal-mint-y-dark-sewbej,
+#panel.panel-normal-mint-y-dark-sewbej,
+.panel-normal-custom-sewbej,
+#panel.panel-normal-custom-sewbej,
+.panel-normal-semabe-azure-sewbej,
+#panel.panel-normal-semabe-azure-sewbej,
+.panel-normal-semabe-cinnamon-sewbej,
+#panel.panel-normal-semabe-cinnamon-sewbej,
+.panel-normal-semabe-crimson-sewbej,
+#panel.panel-normal-semabe-crimson-sewbej,
+.panel-normal-semabe-falcon-sewbej,
+#panel.panel-normal-semabe-falcon-sewbej,
+.panel-normal-semabe-grey-sewbej,
+#panel.panel-normal-semabe-grey-sewbej,
+.panel-normal-semabe-steel-sewbej,
+#panel.panel-normal-semabe-steel-sewbej,
+.panel-normal-semabe-mint-sewbej,
+#panel.panel-normal-semabe-mint-sewbej,
+.panel-normal-semabe-nordic-sewbej,
+#panel.panel-normal-semabe-nordic-sewbej,
+.panel-normal-semabe-violet-sewbej,
+#panel.panel-normal-semabe-violet-sewbej,
+.panel-two-piece-mint-y-sewbej,
+#panel.panel-two-piece-mint-y-sewbej,
+.panel-two-piece-mint-y-dark-sewbej,
+#panel.panel-two-piece-mint-y-dark-sewbej,
+.panel-two-piece-custom-sewbej,
+#panel.panel-two-piece-custom-sewbej,
+.panel-two-piece-semabe-azure-sewbej,
+#panel.panel-two-piece-semabe-azure-sewbej,
+.panel-two-piece-semabe-cinnamon-sewbej,
+#panel.panel-two-piece-semabe-cinnamon-sewbej,
+.panel-two-piece-semabe-crimson-sewbej,
+#panel.panel-two-piece-semabe-crimson-sewbej,
+.panel-two-piece-semabe-falcon-sewbej,
+#panel.panel-two-piece-semabe-falcon-sewbej,
+.panel-two-piece-semabe-grey-sewbej,
+#panel.panel-two-piece-semabe-grey-sewbej,
+.panel-two-piece-semabe-steel-sewbej,
+#panel.panel-two-piece-semabe-steel-sewbej,
+.panel-two-piece-semabe-mint-sewbej,
+#panel.panel-two-piece-semabe-mint-sewbej,
+.panel-two-piece-semabe-nordic-sewbej,
+#panel.panel-two-piece-semabe-nordic-sewbej,
+.panel-two-piece-semabe-violet-sewbej,
+#panel.panel-two-piece-semabe-violet-sewbej,
+.panel-three-piece-mint-y-sewbej,
+#panel.panel-three-piece-mint-y-sewbej,
+.panel-three-piece-mint-y-dark-sewbej,
+#panel.panel-three-piece-mint-y-dark-sewbej,
+.panel-three-piece-custom-sewbej,
+#panel.panel-three-piece-custom-sewbej,
+.panel-three-piece-semabe-azure-sewbej,
+#panel.panel-three-piece-semabe-azure-sewbej,
+.panel-three-piece-semabe-cinnamon-sewbej,
+#panel.panel-three-piece-semabe-cinnamon-sewbej,
+.panel-three-piece-semabe-crimson-sewbej,
+#panel.panel-three-piece-semabe-crimson-sewbej,
+.panel-three-piece-semabe-falcon-sewbej,
+#panel.panel-three-piece-semabe-falcon-sewbej,
+.panel-three-piece-semabe-grey-sewbej,
+#panel.panel-three-piece-semabe-grey-sewbej,
+.panel-three-piece-semabe-steel-sewbej,
+#panel.panel-three-piece-semabe-steel-sewbej,
+.panel-three-piece-semabe-mint-sewbej,
+#panel.panel-three-piece-semabe-mint-sewbej,
+.panel-three-piece-semabe-nordic-sewbej,
+#panel.panel-three-piece-semabe-nordic-sewbej,
+.panel-three-piece-semabe-violet-sewbej,
+#panel.panel-three-piece-semabe-violet-sewbej,
+.panel-dock-mint-y-sewbej,
+#panel.panel-dock-mint-y-sewbej,
+.panel-dock-mint-y-dark-sewbej,
+#panel.panel-dock-mint-y-dark-sewbej,
+.panel-dock-custom-sewbej,
+#panel.panel-dock-custom-sewbej,
+.panel-dock-semabe-azure-sewbej,
+#panel.panel-dock-semabe-azure-sewbej,
+.panel-dock-semabe-cinnamon-sewbej,
+#panel.panel-dock-semabe-cinnamon-sewbej,
+.panel-dock-semabe-crimson-sewbej,
+#panel.panel-dock-semabe-crimson-sewbej,
+.panel-dock-semabe-falcon-sewbej,
+#panel.panel-dock-semabe-falcon-sewbej,
+.panel-dock-semabe-grey-sewbej,
+#panel.panel-dock-semabe-grey-sewbej,
+.panel-dock-semabe-steel-sewbej,
+#panel.panel-dock-semabe-steel-sewbej,
+.panel-dock-semabe-mint-sewbej,
+#panel.panel-dock-semabe-mint-sewbej,
+.panel-dock-semabe-nordic-sewbej,
+#panel.panel-dock-semabe-nordic-sewbej,
+.panel-dock-semabe-violet-sewbej,
+#panel.panel-dock-semabe-violet-sewbej {
     box-shadow: none;
     background-gradient-direction: vertical;
     background-gradient-start: transparent;
@@ -860,104 +686,223 @@
     padding: 0
 }
 
-.panel-bottom.panel-three-piece-mint-y-fully .applet-box,
-.panel-bottom.panel-three-piece-custom-fully .applet-box,
-.panel-bottom.panel-three-piece-mint-y-dark-fully .applet-box,
-.panel-bottom.panel-three-piece-semabe-azure-fully .applet-box,
-.panel-bottom.panel-three-piece-semabe-cinnamon-fully .applet-box,
-.panel-bottom.panel-three-piece-semabe-crimson-fully .applet-box,
-.panel-bottom.panel-three-piece-semabe-falcon-fully .applet-box,
-.panel-bottom.panel-three-piece-semabe-grey-fully .applet-box,
-.panel-bottom.panel-three-piece-semabe-steel-fully .applet-box,
-.panel-bottom.panel-three-piece-semabe-mint-fully .applet-box,
-.panel-bottom.panel-three-piece-semabe-nordic-fully .applet-box,
-.panel-bottom.panel-three-piece-semabe-violet-fully .applet-box {
-    border-radius: 
-        12px /*border-radius*/
-}
-
-.panel-bottom.panel-three-piece-mint-y-fully .grouped-window-list-item-box,
-.panel-bottom.panel-three-piece-custom-fully .grouped-window-list-item-box,
-.panel-bottom.panel-three-piece-mint-y-dark-fully .grouped-window-list-item-box,
-.panel-bottom.panel-three-piece-semabe-azure-fully .grouped-window-list-item-box,
-.panel-bottom.panel-three-piece-semabe-cinnamon-fully .grouped-window-list-item-box,
-.panel-bottom.panel-three-piece-semabe-crimson-fully .grouped-window-list-item-box,
-.panel-bottom.panel-three-piece-semabe-falcon-fully .grouped-window-list-item-box,
-.panel-bottom.panel-three-piece-semabe-grey-fully .grouped-window-list-item-box,
-.panel-bottom.panel-three-piece-semabe-steel-fully .grouped-window-list-item-box,
-.panel-bottom.panel-three-piece-semabe-mint-fully .grouped-window-list-item-box,
-.panel-bottom.panel-three-piece-semabe-nordic-fully .grouped-window-list-item-box,
-.panel-bottom.panel-three-piece-semabe-violet-fully .grouped-window-list-item-box {
-    border-radius: 
-        12px /*border-radius*/
-}
-
-.panel-bottom.panel-three-piece-mint-y-fully .window-list-item-box,
-.panel-bottom.panel-three-piece-custom-fully .window-list-item-box,
-.panel-bottom.panel-three-piece-mint-y-dark-fully .window-list-item-box,
-.panel-bottom.panel-three-piece-semabe-azure-fully .window-list-item-box,
-.panel-bottom.panel-three-piece-semabe-cinnamon-fully .window-list-item-box,
-.panel-bottom.panel-three-piece-semabe-crimson-fully .window-list-item-box,
-.panel-bottom.panel-three-piece-semabe-falcon-fully .window-list-item-box,
-.panel-bottom.panel-three-piece-semabe-grey-fully .window-list-item-box,
-.panel-bottom.panel-three-piece-semabe-steel-fully .window-list-item-box,
-.panel-bottom.panel-three-piece-semabe-mint-fully .window-list-item-box,
-.panel-bottom.panel-three-piece-semabe-nordic-fully .window-list-item-box,
-.panel-bottom.panel-three-piece-semabe-violet-fully .window-list-item-box {
-    border-radius: 
-        12px /*border-radius*/
-}
-
-.panel-bottom.panel-three-piece-mint-y-fully .workspace-graph .workspace,
-.panel-bottom.panel-three-piece-custom-fully .workspace-graph .workspace,
-.panel-bottom.panel-three-piece-mint-y-dark-fully .workspace-graph .workspace,
-.panel-bottom.panel-three-piece-semabe-azure-fully .workspace-graph .workspace,
-.panel-bottom.panel-three-piece-semabe-cinnamon-fully .workspace-graph .workspace,
-.panel-bottom.panel-three-piece-semabe-crimson-fully .workspace-graph .workspace,
-.panel-bottom.panel-three-piece-semabe-falcon-fully .workspace-graph .workspace,
-.panel-bottom.panel-three-piece-semabe-grey-fully .workspace-graph .workspace,
-.panel-bottom.panel-three-piece-semabe-steel-fully .workspace-graph .workspace,
-.panel-bottom.panel-three-piece-semabe-mint-fully .workspace-graph .workspace,
-.panel-bottom.panel-three-piece-semabe-nordic-fully .workspace-graph .workspace,
-.panel-bottom.panel-three-piece-semabe-violet-fully .workspace-graph .workspace,
-.panel-bottom.panel-two-piece-mint-y-fully .workspace-graph .workspace,
-.panel-bottom.panel-two-piece-custom-fully .workspace-graph .workspace,
-.panel-bottom.panel-two-piece-mint-y-dark-fully .workspace-graph .workspace,
-.panel-bottom.panel-two-piece-semabe-azure-fully .workspace-graph .workspace,
-.panel-bottom.panel-two-piece-semabe-cinnamon-fully .workspace-graph .workspace,
-.panel-bottom.panel-two-piece-semabe-crimson-fully .workspace-graph .workspace,
-.panel-bottom.panel-two-piece-semabe-falcon-fully .workspace-graph .workspace,
-.panel-bottom.panel-two-piece-semabe-grey-fully .workspace-graph .workspace,
-.panel-bottom.panel-two-piece-semabe-steel-fully .workspace-graph .workspace,
-.panel-bottom.panel-two-piece-semabe-mint-fully .workspace-graph .workspace,
-.panel-bottom.panel-two-piece-semabe-nordic-fully .workspace-graph .workspace,
-.panel-bottom.panel-two-piece-semabe-violet-fully .workspace-graph .workspace,
-.panel-bottom.panel-dock-mint-y-fully .workspace-graph .workspace,
-.panel-bottom.panel-dock-custom-fully .workspace-graph .workspace,
-.panel-bottom.panel-dock-mint-y-dark-fully .workspace-graph .workspace,
-.panel-bottom.panel-dock-semabe-azure-fully .workspace-graph .workspace,
-.panel-bottom.panel-dock-semabe-cinnamon-fully .workspace-graph .workspace,
-.panel-bottom.panel-dock-semabe-crimson-fully .workspace-graph .workspace,
-.panel-bottom.panel-dock-semabe-falcon-fully .workspace-graph .workspace,
-.panel-bottom.panel-dock-semabe-grey-fully .workspace-graph .workspace,
-.panel-bottom.panel-dock-semabe-steel-fully .workspace-graph .workspace,
-.panel-bottom.panel-dock-semabe-mint-fully .workspace-graph .workspace,
-.panel-bottom.panel-dock-semabe-nordic-fully .workspace-graph .workspace,
-.panel-bottom.panel-dock-semabe-violet-fully .workspace-graph .workspace,
-.panel-bottom.panel-normal-mint-y-fully .workspace-graph .workspace,
-.panel-bottom.panel-normal-custom-fully .workspace-graph .workspace,
-.panel-bottom.panel-normal-mint-y-dark-fully .workspace-graph .workspace,
-.panel-bottom.panel-normal-semabe-azure-fully .workspace-graph .workspace,
-.panel-bottom.panel-normal-semabe-cinnamon-fully .workspace-graph .workspace,
-.panel-bottom.panel-normal-semabe-crimson-fully .workspace-graph .workspace,
-.panel-bottom.panel-normal-semabe-falcon-fully .workspace-graph .workspace,
-.panel-bottom.panel-normal-semabe-grey-fully .workspace-graph .workspace,
-.panel-bottom.panel-normal-semabe-steel-fully .workspace-graph .workspace,
-.panel-bottom.panel-normal-semabe-mint-fully .workspace-graph .workspace,
-.panel-bottom.panel-normal-semabe-nordic-fully .workspace-graph .workspace,
-.panel-bottom.panel-normal-semabe-violet-fully .workspace-graph .workspace {
-    border-radius: 
-        12px /*border-radius*/
+.panel-bottom.panel-three-piece-mint-y-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-three-piece-custom-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-three-piece-mint-y-dark-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-three-piece-semabe-azure-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-three-piece-semabe-cinnamon-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-three-piece-semabe-crimson-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-three-piece-semabe-falcon-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-three-piece-semabe-grey-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-three-piece-semabe-steel-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-three-piece-semabe-mint-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-three-piece-semabe-nordic-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-three-piece-semabe-violet-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-two-piece-mint-y-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-two-piece-custom-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-two-piece-mint-y-dark-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-two-piece-semabe-azure-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-two-piece-semabe-cinnamon-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-two-piece-semabe-crimson-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-two-piece-semabe-falcon-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-two-piece-semabe-grey-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-two-piece-semabe-steel-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-two-piece-semabe-mint-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-two-piece-semabe-nordic-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-two-piece-semabe-violet-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-dock-mint-y-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-dock-custom-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-dock-mint-y-dark-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-dock-semabe-azure-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-dock-semabe-cinnamon-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-dock-semabe-crimson-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-dock-semabe-falcon-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-dock-semabe-grey-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-dock-semabe-steel-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-dock-semabe-mint-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-dock-semabe-nordic-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-dock-semabe-violet-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-normal-mint-y-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-normal-custom-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-normal-mint-y-dark-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-normal-semabe-azure-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-normal-semabe-cinnamon-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-normal-semabe-crimson-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-normal-semabe-falcon-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-normal-semabe-grey-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-normal-semabe-steel-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-normal-semabe-mint-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-normal-semabe-nordic-sewbej .workspace-graph .workspace,
+.panel-bottom.panel-normal-semabe-violet-sewbej .workspace-graph .workspace {
+    border-radius:
+          /*border-radius-applet*/
     ;
     padding: 3px
+}
+
+.panel-bottom.panel-three-piece-mint-y-sewbej .applet-box,
+.panel-bottom.panel-three-piece-custom-sewbej .applet-box,
+.panel-bottom.panel-three-piece-mint-y-dark-sewbej .applet-box,
+.panel-bottom.panel-three-piece-semabe-azure-sewbej .applet-box,
+.panel-bottom.panel-three-piece-semabe-cinnamon-sewbej .applet-box,
+.panel-bottom.panel-three-piece-semabe-crimson-sewbej .applet-box,
+.panel-bottom.panel-three-piece-semabe-falcon-sewbej .applet-box,
+.panel-bottom.panel-three-piece-semabe-grey-sewbej .applet-box,
+.panel-bottom.panel-three-piece-semabe-steel-sewbej .applet-box,
+.panel-bottom.panel-three-piece-semabe-mint-sewbej .applet-box,
+.panel-bottom.panel-three-piece-semabe-nordic-sewbej .applet-box,
+.panel-bottom.panel-three-piece-semabe-violet-sewbej .applet-box,
+.panel-bottom.panel-three-piece-mint-y-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-three-piece-custom-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-three-piece-mint-y-dark-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-three-piece-semabe-azure-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-three-piece-semabe-cinnamon-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-three-piece-semabe-crimson-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-three-piece-semabe-falcon-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-three-piece-semabe-grey-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-three-piece-semabe-steel-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-three-piece-semabe-mint-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-three-piece-semabe-nordic-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-three-piece-semabe-violet-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-three-piece-mint-y-sewbej .window-list-item-box,
+.panel-bottom.panel-three-piece-custom-sewbej .window-list-item-box,
+.panel-bottom.panel-three-piece-mint-y-dark-sewbej .window-list-item-box,
+.panel-bottom.panel-three-piece-semabe-azure-sewbej .window-list-item-box,
+.panel-bottom.panel-three-piece-semabe-cinnamon-sewbej .window-list-item-box,
+.panel-bottom.panel-three-piece-semabe-crimson-sewbej .window-list-item-box,
+.panel-bottom.panel-three-piece-semabe-falcon-sewbej .window-list-item-box,
+.panel-bottom.panel-three-piece-semabe-grey-sewbej .window-list-item-box,
+.panel-bottom.panel-three-piece-semabe-steel-sewbej .window-list-item-box,
+.panel-bottom.panel-three-piece-semabe-mint-sewbej .window-list-item-box,
+.panel-bottom.panel-three-piece-semabe-nordic-sewbej .window-list-item-box,
+.panel-bottom.panel-three-piece-semabe-violet-sewbej .window-list-item-box,
+.panel-bottom.panel-two-piece-mint-y-sewbej .applet-box,
+.panel-bottom.panel-two-piece-custom-sewbej .applet-box,
+.panel-bottom.panel-two-piece-mint-y-dark-sewbej .applet-box,
+.panel-bottom.panel-two-piece-semabe-azure-sewbej .applet-box,
+.panel-bottom.panel-two-piece-semabe-cinnamon-sewbej .applet-box,
+.panel-bottom.panel-two-piece-semabe-crimson-sewbej .applet-box,
+.panel-bottom.panel-two-piece-semabe-falcon-sewbej .applet-box,
+.panel-bottom.panel-two-piece-semabe-grey-sewbej .applet-box,
+.panel-bottom.panel-two-piece-semabe-steel-sewbej .applet-box,
+.panel-bottom.panel-two-piece-semabe-mint-sewbej .applet-box,
+.panel-bottom.panel-two-piece-semabe-nordic-sewbej .applet-box,
+.panel-bottom.panel-two-piece-semabe-violet-sewbej .applet-box,
+.panel-bottom.panel-two-piece-mint-y-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-two-piece-custom-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-two-piece-mint-y-dark-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-two-piece-semabe-azure-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-two-piece-semabe-cinnamon-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-two-piece-semabe-crimson-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-two-piece-semabe-falcon-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-two-piece-semabe-grey-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-two-piece-semabe-steel-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-two-piece-semabe-mint-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-two-piece-semabe-nordic-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-two-piece-semabe-violet-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-two-piece-mint-y-sewbej .window-list-item-box,
+.panel-bottom.panel-two-piece-custom-sewbej .window-list-item-box,
+.panel-bottom.panel-two-piece-mint-y-dark-sewbej .window-list-item-box,
+.panel-bottom.panel-two-piece-semabe-azure-sewbej .window-list-item-box,
+.panel-bottom.panel-two-piece-semabe-cinnamon-sewbej .window-list-item-box,
+.panel-bottom.panel-two-piece-semabe-crimson-sewbej .window-list-item-box,
+.panel-bottom.panel-two-piece-semabe-falcon-sewbej .window-list-item-box,
+.panel-bottom.panel-two-piece-semabe-grey-sewbej .window-list-item-box,
+.panel-bottom.panel-two-piece-semabe-steel-sewbej .window-list-item-box,
+.panel-bottom.panel-two-piece-semabe-mint-sewbej .window-list-item-box,
+.panel-bottom.panel-two-piece-semabe-nordic-sewbej .window-list-item-box,
+.panel-bottom.panel-two-piece-semabe-violet-sewbej .window-list-item-box,
+.panel-bottom.panel-dock-mint-y-sewbej .applet-box,
+.panel-bottom.panel-dock-custom-sewbej .applet-box,
+.panel-bottom.panel-dock-mint-y-dark-sewbej .applet-box,
+.panel-bottom.panel-dock-semabe-azure-sewbej .applet-box,
+.panel-bottom.panel-dock-semabe-cinnamon-sewbej .applet-box,
+.panel-bottom.panel-dock-semabe-crimson-sewbej .applet-box,
+.panel-bottom.panel-dock-semabe-falcon-sewbej .applet-box,
+.panel-bottom.panel-dock-semabe-grey-sewbej .applet-box,
+.panel-bottom.panel-dock-semabe-steel-sewbej .applet-box,
+.panel-bottom.panel-dock-semabe-mint-sewbej .applet-box,
+.panel-bottom.panel-dock-semabe-nordic-sewbej .applet-box,
+.panel-bottom.panel-dock-semabe-violet-sewbej .applet-box,
+.panel-bottom.panel-dock-mint-y-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-dock-custom-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-dock-mint-y-dark-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-dock-semabe-azure-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-dock-semabe-cinnamon-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-dock-semabe-crimson-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-dock-semabe-falcon-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-dock-semabe-grey-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-dock-semabe-steel-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-dock-semabe-mint-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-dock-semabe-nordic-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-dock-semabe-violet-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-dock-mint-y-sewbej .window-list-item-box,
+.panel-bottom.panel-dock-custom-sewbej .window-list-item-box,
+.panel-bottom.panel-dock-mint-y-dark-sewbej .window-list-item-box,
+.panel-bottom.panel-dock-semabe-azure-sewbej .window-list-item-box,
+.panel-bottom.panel-dock-semabe-cinnamon-sewbej .window-list-item-box,
+.panel-bottom.panel-dock-semabe-crimson-sewbej .window-list-item-box,
+.panel-bottom.panel-dock-semabe-falcon-sewbej .window-list-item-box,
+.panel-bottom.panel-dock-semabe-grey-sewbej .window-list-item-box,
+.panel-bottom.panel-dock-semabe-steel-sewbej .window-list-item-box,
+.panel-bottom.panel-dock-semabe-mint-sewbej .window-list-item-box,
+.panel-bottom.panel-dock-semabe-nordic-sewbej .window-list-item-box,
+.panel-bottom.panel-dock-semabe-violet-sewbej .window-list-item-box,
+.panel-bottom.panel-normal-mint-y-sewbej .applet-box,
+.panel-bottom.panel-normal-custom-sewbej .applet-box,
+.panel-bottom.panel-normal-mint-y-dark-sewbej .applet-box,
+.panel-bottom.panel-normal-semabe-azure-sewbej .applet-box,
+.panel-bottom.panel-normal-semabe-cinnamon-sewbej .applet-box,
+.panel-bottom.panel-normal-semabe-crimson-sewbej .applet-box,
+.panel-bottom.panel-normal-semabe-falcon-sewbej .applet-box,
+.panel-bottom.panel-normal-semabe-grey-sewbej .applet-box,
+.panel-bottom.panel-normal-semabe-steel-sewbej .applet-box,
+.panel-bottom.panel-normal-semabe-mint-sewbej .applet-box,
+.panel-bottom.panel-normal-semabe-nordic-sewbej .applet-box,
+.panel-bottom.panel-normal-semabe-violet-sewbej .applet-box,
+.panel-bottom.panel-normal-mint-y-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-normal-custom-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-normal-mint-y-dark-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-normal-semabe-azure-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-normal-semabe-cinnamon-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-normal-semabe-crimson-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-normal-semabe-falcon-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-normal-semabe-grey-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-normal-semabe-steel-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-normal-semabe-mint-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-normal-semabe-nordic-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-normal-semabe-violet-sewbej .grouped-window-list-item-box,
+.panel-bottom.panel-normal-mint-y-sewbej .window-list-item-box,
+.panel-bottom.panel-normal-custom-sewbej .window-list-item-box,
+.panel-bottom.panel-normal-mint-y-dark-sewbej .window-list-item-box,
+.panel-bottom.panel-normal-semabe-azure-sewbej .window-list-item-box,
+.panel-bottom.panel-normal-semabe-cinnamon-sewbej .window-list-item-box,
+.panel-bottom.panel-normal-semabe-crimson-sewbej .window-list-item-box,
+.panel-bottom.panel-normal-semabe-falcon-sewbej .window-list-item-box,
+.panel-bottom.panel-normal-semabe-grey-sewbej .window-list-item-box,
+.panel-bottom.panel-normal-semabe-steel-sewbej .window-list-item-box,
+.panel-bottom.panel-normal-semabe-mint-sewbej .window-list-item-box,
+.panel-bottom.panel-normal-semabe-nordic-sewbej .window-list-item-box,
+.panel-bottom.panel-normal-semabe-violet-sewbej .window-list-item-box {
+    border-radius:
+         /*border-radius-applet*/
+    ;
+    padding-left:
+         /*padding-applet*/
+    ;
+    padding-right:
+         /*padding-applet*/
+    ;
+    margin-left:
+         /*margin-applet*/
+    ;
+    margin-right:
+         /*margin-applet*/
+    ;
+    margin-top:
+         /*vertical-margin-applet*/
+    ;
+    margin-bottom:
+         /*vertical-margin-applet*/
+    ;
 }

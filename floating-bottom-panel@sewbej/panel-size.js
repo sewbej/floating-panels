@@ -8,7 +8,7 @@ const SignalManager = imports.misc.signalManager;
    CONFIGURATION (BOTTOM PANEL)
 ------------------------------------------------------- */
 
-const TARGET_POS         = Panel.PanelLoc.bottom;  // this module only affects bottom panels
+const TARGET_POS         = Panel.PanelLoc.bottom;
 const DEFAULT_PANEL_SIZE = 48;                    // fallback height
 const MIN_SIZE           = 12;                    // minimal panel height
 
@@ -17,7 +17,7 @@ let panelHeightPercent = 7;
 
 // GSettings and runtime state
 let settings          = null;
-let extSettings       = null;  // Ustawienia Twojego rozszerzenia
+let extSettings       = null;
 let originalHeightsMap = {};   // panelId -> original "100%" height (bottom panels only)
 let panelMonitorMap    = {};   // panelId -> monitor index
 
