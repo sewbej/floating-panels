@@ -36,7 +36,7 @@ function MyExtension(meta) {
 MyExtension.prototype = {
 	_init: function(meta) {
 		this.meta = meta;
-
+		
 		this._signals = new SignalManager.SignalManager(null);
 		
 		this._panel_status = new Map();
@@ -46,7 +46,7 @@ MyExtension.prototype = {
 		this._filter = new Filter.PanelFilter();
 		this.policy = new Policies.MaximizedPolicy(this);
 		this.settings = new Settings.ExtensionSettings(this, meta.uuid);
-
+		
 		this.settings.bind(
 			"panel-style",
 			"panel_style",
@@ -96,9 +96,39 @@ MyExtension.prototype = {
 		);
 		
 		this.settings.bind(
-			"border-thickness",
-			"border_thickness",
-			this.on_settings_changed_thickness.bind(this)
+			"applet-custom",
+			"applet_custom",
+			this.on_settings_changed_custom_applet.bind(this)
+		);
+		
+		this.settings.bind(
+			"border-radius-applet",
+			"border_radius_applet",
+			this.on_settings_changed_radius_applet.bind(this)
+		);
+		
+		this.settings.bind(
+			"padding-applet",
+			"padding_applet",
+			this.on_settings_changed_padding_applet.bind(this)
+		);
+		
+		this.settings.bind(
+			"margin-applet",
+			"margin_applet",
+			this.on_settings_changed_margin_applet.bind(this)
+		);
+		
+		this.settings.bind(
+			"vertical-margin-applet",
+			"vertical_margin_applet",
+			this.on_settings_changed_vertical_margin_applet.bind(this)
+		);
+		
+		this.settings.bind(
+			"border-width",
+			"border_width",
+			this.on_settings_changed_border_width.bind(this)
 		);
 		
 		this.settings.bind(
@@ -131,7 +161,7 @@ MyExtension.prototype = {
 			meta.uuid,
 			GLib.get_home_dir() + "/.local/share/locale"
 		);
-
+		
 		PanelSize.init(this.settings);
 	},
 	
@@ -141,9 +171,9 @@ MyExtension.prototype = {
 			this.panel_theme.includes("-custom");
 		
 		if (isCustomTheme) {
-			return this.panel_style + this.panel_theme + "-fully";
+			return this.panel_style + this.panel_theme + "-sewbej";
 		} else {
-			return this.panel_style + this.panel_theme_predefined + "-fully";
+			return this.panel_style + this.panel_theme_predefined + "-sewbej";
 		}
 	},
 	
@@ -161,7 +191,7 @@ MyExtension.prototype = {
 		
 		if (this.enablePanelSize && PanelSize && PanelSize.enable)
 			PanelSize.enable();
-
+		
 		if (this._signals) {
 			this._signals.disconnectAllSignals();
 			
@@ -235,7 +265,7 @@ MyExtension.prototype = {
 		
 		if (!transparent && !currentStatus && !hasOriginalStyle)
 			return;
-
+		
 		if (transparent) {
 			if (!this._panel_original_style.has(id)) {
 				this._panel_original_style.set(
@@ -255,7 +285,7 @@ MyExtension.prototype = {
 			this._panel_status.set(id, true);
 			return;
 		}
-
+		
 		panel.actor.remove_style_class_name(this._classname);
 		
 		if (this._panel_original_style.has(id)) {
@@ -303,8 +333,32 @@ MyExtension.prototype = {
 		this.runPythonScriptRadius();
 	},
 	
-	on_settings_changed_thickness: function() {
-		this.runPythonScriptThickness();
+	on_settings_changed_custom_applet: function() {
+		if (!this.applet_custom) {
+			this.runPythonScriptCustomApplet();
+		} else {
+			this.runPythonScriptAppletStyles();
+		}
+	},
+	
+	on_settings_changed_radius_applet: function() {
+		this.runPythonScriptRadiusApplet();
+	},
+	
+	on_settings_changed_padding_applet: function() {
+		this.runPythonScriptPaddingApplet();
+	},
+	
+	on_settings_changed_margin_applet: function() {
+		this.runPythonScriptMarginApplet();
+	},
+	
+	on_settings_changed_vertical_margin_applet: function() {
+		this.runPythonScriptVerticalMarginApplet();
+	},
+	
+	on_settings_changed_border_width: function() {
+		this.runPythonScriptBorderWidth();
 	},
 	
 	on_settings_changed_shadow: function() {
@@ -312,7 +366,7 @@ MyExtension.prototype = {
 	},
 	
 	on_settings_changed_opacity: function() {
-		this.runPythonScriptOpacity();
+		this.runPythonScriptopacity();
 	},
 	
 	on_panel_height_changed: function() {
@@ -419,9 +473,9 @@ MyExtension.prototype = {
 		);
 	},
 	
-	runPythonScriptOpacity: function() {
+	runPythonScriptopacity: function() {
 		let val =
-			this.opacity_level ?? "8);";
+			this.opacity_level ?? "1);";
 		
 		if (
 			typeof val === "number" ||
@@ -459,9 +513,38 @@ MyExtension.prototype = {
 		);
 	},
 	
-	runPythonScriptThickness: function() {
+	runPythonScriptCustomApplet: function() {
+		let val = (this.applet_custom === true) ? "true" : "false";
+		
+		this._runPythonScript(
+			"run_apply_applet_custom.py",
+			[val]
+		);
+	},
+	
+	formatPxValue: function(val, defaultValue) {
+		let result = val ?? defaultValue;
+		if (typeof result === "number" || (typeof result === "string" && !result.endsWith("px"))) {
+			return `${result}px`;
+		}
+		return result;
+	},
+	
+	runPythonScriptAppletStyles: function() {
+		let radius = this.formatPxValue(this.border_radius_applet, "8px");
+		let padding = this.formatPxValue(this.padding_applet, "3px");
+		let margin = this.formatPxValue(this.margin_applet, "1px");
+		let vmargin = this.formatPxValue(this.vertical_margin_applet, "1px");
+		
+		this._runPythonScript(
+			"run_apply_applet_styles.py",
+			[radius, padding, margin, vmargin]
+		);
+	},
+	
+	runPythonScriptRadiusApplet: function() {
 		let val =
-			this.border_thickness ?? "8px";
+			this.border_radius_applet ?? "8px";
 		
 		if (
 			typeof val === "number" ||
@@ -472,9 +555,89 @@ MyExtension.prototype = {
 		) {
 			val = `${val}px`;
 		}
-
+		
 		this._runPythonScript(
-			"run_apply_thickness.py",
+			"run_apply_radius_applet.py",
+			[val]
+		);
+	},
+	
+	runPythonScriptPaddingApplet: function() {
+		let val =
+			this.padding_applet ?? "3px";
+		
+		if (
+			typeof val === "number" ||
+			(
+				typeof val === "string" &&
+				!val.endsWith("px")
+			)
+		) {
+			val = `${val}px`;
+		}
+		
+		this._runPythonScript(
+			"run_apply_padding_applet.py",
+			[val]
+		);
+	},
+	
+	runPythonScriptMarginApplet: function() {
+		let val =
+			this.margin_applet ?? "1px";
+		
+		if (
+			typeof val === "number" ||
+			(
+				typeof val === "string" &&
+				!val.endsWith("px")
+			)
+		) {
+			val = `${val}px`;
+		}
+		
+		this._runPythonScript(
+			"run_apply_margin_applet.py",
+			[val]
+		);
+	},
+	
+	runPythonScriptVerticalMarginApplet: function() {
+		let val =
+			this.vertical_margin_applet ?? "1px";
+		
+		if (
+			typeof val === "number" ||
+			(
+				typeof val === "string" &&
+				!val.endsWith("px")
+			)
+		) {
+			val = `${val}px`;
+		}
+		
+		this._runPythonScript(
+			"run_apply_vertical_margin_applet.py",
+			[val]
+		);
+	},
+	
+	runPythonScriptBorderWidth: function() {
+		let val =
+			this.border_width ?? "8px";
+		
+		if (
+			typeof val === "number" ||
+			(
+				typeof val === "string" &&
+				!val.endsWith("px")
+			)
+		) {
+			val = `${val}px`;
+		}
+		
+		this._runPythonScript(
+			"run_apply_border_width.py",
 			[val]
 		);
 	},

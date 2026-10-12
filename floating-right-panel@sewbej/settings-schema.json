@@ -3,67 +3,65 @@
     "type": "layout",
     "pages": [
       "page1",
-      "page2"
+      "page2",
+      "page3"
     ],
     "page1": {
       "type": "page",
-      "title": "Settings",
+      "title": "Appearance",
       "sections": [
-        "section-general",
-        "section-appearance",
-        "section-radius",
-        "section-gap-size",
-        "section-filters"
+        "section-panel-appearance",
+        "section-applets-appearance"
       ]
     },
     "page2": {
+      "type": "page",
+      "title": "Behavior",
+      "sections": [
+        "section-behavior"
+      ]
+    },
+    "page3": {
       "type": "page",
       "title": "About",
       "sections": [
         "section-about"
       ]
     },
-    "section-general": {
+    "section-panel-appearance": {
       "type": "section",
-      "title": "Appearance",
+      "title": "Panel",
       "keys": [
         "panel-theme",
         "background-gradient-start",
         "background-gradient-end",
         "border-color",
         "panel-theme-predefined",
-        "opacity-level"
-      ]
-    },
-    "section-appearance": {
-      "type": "section",
-      "title": "",
-      "keys": [
-        "border-thickness",
+        "opacity-level",
+        "panel-style",
+        "border-radius",
+        "border-width",
         "panel-shadow",
-        "panel-style"
-      ]
-    },
-    "section-radius": {
-      "type": "section",
-      "title": "",
-      "keys": [
-        "border-radius"
-      ]
-    },
-    "section-gap-size": {
-      "type": "section",
-      "title": "",
-      "keys": [
         "gap-size"
       ]
     },
-    "section-filters": {
+    "section-applets-appearance": {
       "type": "section",
-      "title": "Behavior",
+      "title": "Applets",
+      "keys": [
+        "applet-custom",
+        "border-radius-applet",
+        "padding-applet",
+        "margin-applet",
+        "vertical-margin-applet"
+      ]
+    },
+    "section-behavior": {
+      "type": "section",
+      "title": "Maximized windows",
       "keys": [
         "window-maximized",
-        "filters-description",
+        "panel-height-note",
         "panel-height"
       ]
     },
@@ -90,7 +88,7 @@
   "panel-theme-predefined": {
     "type": "combobox",
     "default": "-semabe-steel",
-    "description": "Color scheme",
+    "description": "Predefined color scheme",
     "dependency": "panel-theme=predefined",
     "options": {
       "Mint-Y": "-mint-y",
@@ -136,19 +134,61 @@
   },
   "border-radius": {
     "type": "scale",
-    "description": "Corner radius",
+    "description": "Panel corner radius",
     "show-value": true,
     "min": 0,
     "max": 36,
     "step": 1,
     "default": 12
   },
+  "applet-custom": {
+    "type": "switch",
+    "default": false,
+    "description": "Customize applets"
+  },
+  "border-radius-applet": {
+    "type": "scale",
+    "description": "Applet corner radius",
+    "dependency": "applet-custom",
+    "show-value": true,
+    "min": 0,
+    "max": 36,
+    "step": 1,
+    "default": 8
+  },
+  "padding-applet": {
+    "type": "spinbutton",
+    "description": "Padding",
+    "dependency": "applet-custom",
+    "min": 0,
+    "max": 18,
+    "step": 1,
+    "default": 3
+  },
+  "margin-applet": {
+    "type": "spinbutton",
+    "description": "Horizontal margin",
+    "dependency": "applet-custom",
+    "min": 0,
+    "max": 18,
+    "step": 1,
+    "default": 1
+  },
+  "vertical-margin-applet": {
+    "type": "spinbutton",
+    "description": "Vertical margin",
+    "dependency": "applet-custom",
+    "min": 0,
+    "max": 18,
+    "step": 1,
+    "default": 1
+  },
   "panel-shadow": {
     "type": "colorchooser",
     "default": "rgba(0,0,0,0.0)",
-    "description": "Panel shadow color"
+    "description": "Shadow color"
   },
-  "border-thickness": {
+  "border-width": {
     "type": "spinbutton",
     "description": "Border width",
     "min": 0,
@@ -179,12 +219,11 @@
   "window-maximized": {
     "type": "switch",
     "default": false,
-    "description": "Disable floating panel when a window is maximized",
-    "tooltip": ""
+    "description": "Disable the floating panel when a window is maximized"
   },
   "panel-height": {
     "type": "scale",
-    "description": "                                        Panel height when a window is maximized\nsmall                                                                                                                        same as floating",
+    "description": "                                        Panel height when a window is maximized\nsmallest                                                                                                                        same as floating",
     "dependency": "window-maximized",
     "show-value": false,
     "min": 0,
@@ -192,18 +231,18 @@
     "step": 1,
     "default": 100
   },
-  "filters-description": {
+  "panel-height-note": {
     "type": "label",
     "dependency": "window-maximized",
     "description": "Cinnamon's panel height setting is locked while this option is on. Turn it off to change the panel height."
   },
   "about-label": {
     "type": "label",
-    "description": "Floating right panel\n\nVersion 3.0"
+    "description": "Floating right panel\n\nVersion 3.1"
   },
   "website_btn": {
     "type": "button",
-    "description": "Vist website",
+    "description": "Visit website",
     "callback": "btn_website_pressed"
   },
   "issue_btn": {
